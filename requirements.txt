@@ -1,0 +1,4 @@
+# The whole study needs one third-party package. Everything else — the tf-idf,
+# the distinctive-ratio pass, the JSON-RPC client that boots the reference
+# servers — is the standard library, so `02` and `03` run on a bare Python 3.12.
+httpx>=0.27

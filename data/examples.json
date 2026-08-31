@@ -1,0 +1,837 @@
+{
+ "zero_distinctive": [
+  {
+   "server": "gmail",
+   "tool": "Gmail_DeleteDraftEmail",
+   "tokens": 5,
+   "description": "Delete a draft email using the Gmail API."
+  },
+  {
+   "server": "gmail",
+   "tool": "Gmail_ListLabels",
+   "tokens": 3,
+   "description": "List all the labels in the user's mailbox."
+  },
+  {
+   "server": "gmail",
+   "tool": "Gmail_ListThreads",
+   "tokens": 25,
+   "description": "List threads in the user's mailbox.\n\nBy default, obvious automated threads are excluded from results using\nno-reply sender patterns and Gmail's non-primary category filters\n(promotions, social, update"
+  },
+  {
+   "server": "gmail",
+   "tool": "Gmail_ReplyToEmail",
+   "tokens": 34,
+   "description": "Send a reply to an email message, optionally with one or more file attachments.\n\nTo attach files, pass ``attachments`` and give each file's local path as a\n``file://`` URI in ``source`` (formatted ``f"
+  },
+  {
+   "server": "gmail",
+   "tool": "Gmail_SearchThreads",
+   "tokens": 4,
+   "description": "Search for threads in the user's mailbox."
+  },
+  {
+   "server": "gmail",
+   "tool": "Gmail_SendDraftEmail",
+   "tokens": 5,
+   "description": "Send a draft email using the Gmail API."
+  },
+  {
+   "server": "gmail",
+   "tool": "Gmail_SendEmail",
+   "tokens": 34,
+   "description": "Send an email using the Gmail API, optionally with one or more file attachments.\n\nTo attach files, pass ``attachments`` and give each file's local path as a\n``file://`` URI in ``source`` (formatted ``"
+  },
+  {
+   "server": "gmail",
+   "tool": "Gmail_WriteDraftEmail",
+   "tokens": 34,
+   "description": "Compose a new email draft using the Gmail API, optionally with file attachments.\n\nTo attach files, pass ``attachments`` and give each file's local path as a\n``file://`` URI in ``source`` (formatted ``"
+  },
+  {
+   "server": "gmail",
+   "tool": "Gmail_WriteDraftReplyEmail",
+   "tokens": 35,
+   "description": "Compose a draft reply to an email message, optionally with one or more file attachments.\n\nTo attach files, pass ``attachments`` and give each file's local path as a\n``file://`` URI in ``source`` (form"
+  },
+  {
+   "server": "onesignal/onesignal",
+   "tool": "create_alias_by_subscription",
+   "tokens": 14,
+   "description": "Create or update identity aliases for the user who owns a given subscription. The `onesignal_id` alias is read-only and must not be included."
+  },
+  {
+   "server": "onesignal/onesignal",
+   "tool": "create_or_update_alias",
+   "tokens": 11,
+   "description": "Create or update identity aliases for a user identified by alias. The `onesignal_id` alias is read-only and must not be included."
+  },
+  {
+   "server": "onesignal/onesignal",
+   "tool": "create_segment",
+   "tokens": 8,
+   "description": "Create a new audience segment with filter conditions. Maximum 200 filter entries."
+  },
+  {
+   "server": "onesignal/onesignal",
+   "tool": "create_template",
+   "tokens": 6,
+   "description": "Create a new notification template for a OneSignal app."
+  },
+  {
+   "server": "onesignal/onesignal",
+   "tool": "export_audience_activity_csv",
+   "tokens": 14,
+   "description": "Export audience activity for a notification to CSV. WARNING: Only 1 concurrent export is allowed per account \u2014 if a 409 or 429 is returned, a previous export is still running."
+  },
+  {
+   "server": "onesignal/onesignal",
+   "tool": "export_subscriptions_csv",
+   "tokens": 14,
+   "description": "Export all subscriptions for a OneSignal app to CSV. WARNING: Only 1 concurrent export is allowed per account \u2014 if a 409 or 429 is returned, a previous export is still running."
+  },
+  {
+   "server": "onesignal/onesignal",
+   "tool": "get_template",
+   "tokens": 4,
+   "description": "Retrieve a single notification template by ID."
+  },
+  {
+   "server": "onesignal/onesignal",
+   "tool": "get_user_identity_by_subscription",
+   "tokens": 8,
+   "description": "Retrieve the identity aliases for the user who owns a given subscription."
+  },
+  {
+   "server": "onesignal/onesignal",
+   "tool": "list_segments",
+   "tokens": 7,
+   "description": "List audience segments for a OneSignal app. Maximum 300 segments per page."
+  },
+  {
+   "server": "onesignal/onesignal",
+   "tool": "update_template",
+   "tokens": 9,
+   "description": "Update an existing notification template. The `name` field is required even if you are not changing it."
+  },
+  {
+   "server": "onesignal/onesignal",
+   "tool": "view_message",
+   "tokens": 3,
+   "description": "Retrieve a single notification by ID."
+  },
+  {
+   "server": "subwayinfo",
+   "tool": "mta_get_arrivals",
+   "tokens": 9,
+   "description": "Get upcoming train arrivals at a station. Accepts station ID or name (e.g., \"127\", \"Times Square\", \"14th Street\")."
+  },
+  {
+   "server": "subwayinfo",
+   "tool": "mta_search_stations",
+   "tokens": 4,
+   "description": "Search for stations by name or line"
+  },
+  {
+   "server": "subwayinfo",
+   "tool": "mta_get_station_info",
+   "tokens": 7,
+   "description": "Get detailed information about a specific station. Accepts station ID or name."
+  },
+  {
+   "server": "subwayinfo",
+   "tool": "bus_list_alerts",
+   "tokens": 8,
+   "description": "Get active bus service alerts. Optionally filter by route or severity."
+  },
+  {
+   "server": "subwayinfo",
+   "tool": "bus_get_arrivals",
+   "tokens": 6,
+   "description": "Get upcoming bus arrivals at a stop. Accepts stop ID or name (e.g., \"402940\", \"5 Av/W 42 St\")."
+  }
+ ],
+ "overlap": [
+  {
+   "server": "gmail",
+   "similarity": 0.965,
+   "a": {
+    "name": "Gmail_ReplyToEmail",
+    "description": "Send a reply to an email message, optionally with one or more file attachments.\n\nTo attach files, pass ``attachments`` and give each file's local path as a\n``file://`` URI in ``source`` (formatted ``f"
+   },
+   "b": {
+    "name": "Gmail_WriteDraftReplyEmail",
+    "description": "Compose a draft reply to an email message, optionally with one or more file attachments.\n\nTo attach files, pass ``attachments`` and give each file's local path as a\n``file://`` URI in ``source`` (form"
+   }
+  },
+  {
+   "server": "onesignal/onesignal",
+   "similarity": 0.857,
+   "a": {
+    "name": "get_template",
+    "description": "Retrieve a single notification template by ID."
+   },
+   "b": {
+    "name": "view_message",
+    "description": "Retrieve a single notification by ID."
+   }
+  },
+  {
+   "server": "github",
+   "similarity": 0.894,
+   "a": {
+    "name": "list_org_repository_security_advisories",
+    "description": "List repository security advisories for a GitHub organization."
+   },
+   "b": {
+    "name": "list_repository_security_advisories",
+    "description": "List repository security advisories for a GitHub repository."
+   }
+  },
+  {
+   "server": "pubmed",
+   "similarity": 0.988,
+   "a": {
+    "name": "find_related_articles",
+    "description": "Find related articles and resources in PubMed.\n\nIMPORTANT - PubMed Database Scope: This server provides access to PubMed, which ONLY indexes biomedical and life sciences literature including:\n- Medici"
+   },
+   "b": {
+    "name": "lookup_article_by_citation",
+    "description": "Lookup articles by citation details in PubMed.\n\nIMPORTANT - PubMed Database Scope: This server provides access to PubMed, which ONLY indexes biomedical and life sciences literature including:\n- Medici"
+   }
+  },
+  {
+   "server": "slack",
+   "similarity": 0.898,
+   "a": {
+    "name": "Slack_GetMessages",
+    "description": "Get messages in a Slack Channel, DM (direct message) or MPIM (multi-person) conversation.\n\nProvide exactly one of:\n- conversation_id; or\n- channel_name; or\n- any combination of user_ids, usernames, an"
+   },
+   "b": {
+    "name": "Slack_GetThreadMessages",
+    "description": "Get messages in a Slack thread.\n\nA thread is a collection of messages grouped together as replies to a parent message.\nThis tool retrieves all messages in a specific thread, identified by the parent m"
+   }
+  },
+  {
+   "server": "bigquery",
+   "similarity": 0.822,
+   "a": {
+    "name": "get_dataset_info",
+    "description": "Get metadata information about a BigQuery dataset."
+   },
+   "b": {
+    "name": "get_table_info",
+    "description": "Get metadata information about a BigQuery table."
+   }
+  },
+  {
+   "server": "favcrm/favcrm",
+   "similarity": 0.949,
+   "a": {
+    "name": "send_whatsapp_message",
+    "description": "Disabled for agents. Use request_send_approval so the merchant can approve the exact WhatsApp draft in Workroom."
+   },
+   "b": {
+    "name": "send_message",
+    "description": "Disabled for agents. Use request_send_approval so the merchant can approve the exact draft in Workroom."
+   }
+  },
+  {
+   "server": "adamamer20/paper-search-mcp-openai",
+   "similarity": 0.926,
+   "a": {
+    "name": "download_semantic",
+    "description": "Download PDF of a Semantic Scholar paper.    \n\n    Args:\n        paper_id: Semantic Scholar paper ID, Paper identifier in one of the following formats:\n            - Semantic Scholar ID (e.g., \"649def"
+   },
+   "b": {
+    "name": "read_semantic_paper",
+    "description": "Read and extract text content from a Semantic Scholar paper. \n\n    Args:\n        paper_id: Semantic Scholar paper ID, Paper identifier in one of the following formats:\n            - Semantic Scholar I"
+   }
+  },
+  {
+   "server": "oobe-protocol/sap-mcp",
+   "similarity": 0.987,
+   "a": {
+    "name": "metaplex-nft_verifyCollection",
+    "description": "Verify an NFT as part of a collection. SAP MCP context: Protocol metaplex-nft; operation class write. Use for Metaplex NFT collection, mint, metadata, royalty, creator verification, collection verific"
+   },
+   "b": {
+    "name": "metaplex-nft_setAndVerifyCollection",
+    "description": "Set and verify a collection on an NFT in a single transaction. SAP MCP context: Protocol metaplex-nft; operation class write. Use for Metaplex NFT collection, mint, metadata, royalty, creator verifica"
+   }
+  },
+  {
+   "server": "emblemai/emblem-mcp",
+   "similarity": 0.949,
+   "a": {
+    "name": "baseSwapQuote",
+    "description": "Get current USD price and swap quote for Base tokens. ALWAYS fetch fresh prices - crypto is volatile. Use 0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE for native ETH."
+   },
+   "b": {
+    "name": "ethSwapQuote",
+    "description": "Get current USD price and swap quote for Ethereum tokens. ALWAYS fetch fresh prices - crypto is volatile. Use 0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE for native ETH."
+   }
+  },
+  {
+   "server": "segellfosc-dev-ayfx/menjometre",
+   "similarity": 0.89,
+   "a": {
+    "name": "get_person_network",
+    "description": "BFS from a single person up to a max depth (hard-capped at 3)."
+   },
+   "b": {
+    "name": "get_entity_network",
+    "description": "BFS from a single entity up to a max depth (hard-capped at 3)."
+   }
+  },
+  {
+   "server": "TitanSneaker/paper-search-mcp-openai-v2",
+   "similarity": 0.926,
+   "a": {
+    "name": "download_semantic",
+    "description": "Download PDF of a Semantic Scholar paper.    \n\n    Args:\n        paper_id: Semantic Scholar paper ID, Paper identifier in one of the following formats:\n            - Semantic Scholar ID (e.g., \"649def"
+   },
+   "b": {
+    "name": "read_semantic_paper",
+    "description": "Read and extract text content from a Semantic Scholar paper. \n\n    Args:\n        paper_id: Semantic Scholar paper ID, Paper identifier in one of the following formats:\n            - Semantic Scholar I"
+   }
+  },
+  {
+   "server": "boar-network/blockchain-basic",
+   "similarity": 0.924,
+   "a": {
+    "name": "btc_get_mempool_info",
+    "description": "Get mempool fee histogram on Bitcoin mainnet. Returns array of [fee_rate, cumulative_vsize] pairs showing the distribution of transactions in the mempool by fee rate (sat/vB)."
+   },
+   "b": {
+    "name": "btc_testnet_get_mempool_info",
+    "description": "Get mempool fee histogram on Bitcoin testnet3. Returns array of [fee_rate, cumulative_vsize] pairs showing the distribution of transactions in the mempool by fee rate (sat/vB)."
+   }
+  },
+  {
+   "server": "pipeworx/gateway",
+   "similarity": 1.0,
+   "a": {
+    "name": "ror_search",
+    "description": "Search organizations."
+   },
+   "b": {
+    "name": "search_organizations",
+    "description": "Search organizations."
+   }
+  },
+  {
+   "server": "hithereiamaliff/mcp-malaysiatransit",
+   "similarity": 0.887,
+   "a": {
+    "name": "get_next_departure",
+    "description": "Get the single next departure for a route in a specific direction. Quick way to find when the next bus/train leaves. IMPORTANT: Use route_short_name (e.g., \"101\", \"K10\", \"A32\") NOT numeric route_id. W"
+   },
+   "b": {
+    "name": "get_route_origin",
+    "description": "Get the origin stop name for a route in a specific direction. Useful for showing where the bus/train starts. IMPORTANT: Use route_short_name (e.g., \"101\", \"K10\", \"A32\") NOT numeric route_id. Works for"
+   }
+  },
+  {
+   "server": "creativelead/unclick",
+   "similarity": 0.976,
+   "a": {
+    "name": "podcast_get_episodes",
+    "description": "Get episodes for a podcast from Podcast Index."
+   },
+   "b": {
+    "name": "podcast_search_episodes",
+    "description": "Search podcast episodes on Podcast Index."
+   }
+  },
+  {
+   "server": "aparajithn/agent-utils",
+   "similarity": 1.0,
+   "a": {
+    "name": "tool_markdown_to_html",
+    "description": "Convert Markdown to HTML."
+   },
+   "b": {
+    "name": "tool_html_to_markdown",
+    "description": "Convert HTML to Markdown."
+   }
+  },
+  {
+   "server": "dev-7bd0/mcp-server",
+   "similarity": 0.809,
+   "a": {
+    "name": "legal_fetch_patent_by_number",
+    "description": "Fetch full patent details by patent number and jurisdiction. Read-only. No side effects. Idempotent. patent_number: Patent number in EPODOC format e.g. EP1000000 for European, CN120586032 for Chinese,"
+   },
+   "b": {
+    "name": "legal_fetch_patent_citations",
+    "description": "Fetch forward and backward citation chains for a specific patent. Read-only. No side effects. Idempotent. patent_number: Patent number in EPODOC format e.g. EP1000000 for European, CN120586032 for Chi"
+   }
+  },
+  {
+   "server": "Himalayas/himalayas-mcp",
+   "similarity": 0.963,
+   "a": {
+    "name": "get_company_profile",
+    "description": "Get your company's profile on Himalayas. Requires employer authentication."
+   },
+   "b": {
+    "name": "update_company_profile",
+    "description": "Update your company's profile on Himalayas. Requires employer authentication."
+   }
+  },
+  {
+   "server": "cturkieh/france-data",
+   "similarity": 0.807,
+   "a": {
+    "name": "etablissements_finess_in_radius",
+    "description": "Recherche d'\u00e9tablissements de sant\u00e9 FINESS dans un rayon g\u00e9ographique (PostGIS ST_DWithin). Filtrable par familles. 24 valeurs disponibles : mco, ssr, sld, had, psychiatrie, dialyse, ambulatoire, labo"
+   },
+   "b": {
+    "name": "etablissements_finess_by_categorie",
+    "description": "Liste des \u00e9tablissements FINESS par famille, avec filtre d\u00e9partement ou commune optionnel. Pas de rayon \u2014 pour \u00e9num\u00e9ration exhaustive d'une zone administrative. 24 familles disponibles : mco, ssr, sld"
+   }
+  },
+  {
+   "server": "hithereiamaliff/mcp-datagovmy",
+   "similarity": 0.964,
+   "a": {
+    "name": "datagovmy_search_datasets_catalogue",
+    "description": "\u26a0\ufe0f CONSIDER USING search_all INSTEAD: This only searches datasets. For comprehensive results across datasets and dashboards, use search_all tool. \u26a0\ufe0f"
+   },
+   "b": {
+    "name": "datagovmy_search_dashboards",
+    "description": "\u26a0\ufe0f CONSIDER USING search_all INSTEAD: This only searches dashboards. For comprehensive results across datasets and dashboards, use search_all tool. \u26a0\ufe0f"
+   }
+  },
+  {
+   "server": "CaullenOmdahl/nextjs-react-tailwind-assistant",
+   "similarity": 0.9,
+   "a": {
+    "name": "get_library_docs",
+    "description": "Get comprehensive documentation for commonly used libraries in Next.js projects. Available: framer-motion, mdx, headless-ui, next-themes, clsx, tailwind-plugins. Includes installation, usage examples,"
+   },
+   "b": {
+    "name": "list_library_docs",
+    "description": "List all available library documentation files. Includes commonly used libraries like Framer Motion, MDX, Headless UI, next-themes, clsx, and Tailwind plugins. Each provides installation, usage exampl"
+   }
+  },
+  {
+   "server": "satoshidata/wallet-intelligence",
+   "similarity": 0.836,
+   "a": {
+    "name": "entity_list",
+    "description": "Return named Bitcoin entity rollups, optionally filtered by category. coverage_status indicates whether each rollup is full, substantial, partial, or seed-only coverage; last_activity_at is label-DB a"
+   },
+   "b": {
+    "name": "entity_lookup",
+    "description": "Return one named Bitcoin entity rollup and a bounded member-address sample. coverage_status indicates whether the rollup is full, substantial, partial, or seed-only coverage; last_activity_at is label"
+   }
+  },
+  {
+   "server": "rabqatab/lexlink-ko-mcp",
+   "similarity": 0.939,
+   "a": {
+    "name": "lstrm_rlt_jo_search",
+    "description": "\n        Legal term to article linkage (\ubc95\ub839\uc6a9\uc5b4\u2192\uc870\ubb38 \uc5f0\uacc4 \uc870\ud68c).\n\n        This tool searches the linkage between legal terms and the specific\n        law articles where those terms are used or defined.\n\n      "
+   },
+   "b": {
+    "name": "jo_rlt_lstrm_search",
+    "description": "\n        Article to legal term linkage (\uc870\ubb38\u2192\ubc95\ub839\uc6a9\uc5b4 \uc5f0\uacc4 \uc870\ud68c).\n\n        This tool searches the linkage from specific law articles to the\n        legal terms defined or used within those articles. Useful for "
+   }
+  },
+  {
+   "server": "jalpp/chessagine",
+   "similarity": 0.914,
+   "a": {
+    "name": "get-stockfish-best-move",
+    "description": "Find the best move in a chess position using Stockfish 18 Multi-threated Lite WASM engine"
+   },
+   "b": {
+    "name": "get-stockfish-multipv-analysis",
+    "description": "Analyze a chess position and get multiple best move candidates with Stockfish 18 Multi-threated Lite WASM engine"
+   }
+  }
+ ],
+ "stated_unconstrained": [
+  {
+   "server": "onesignal/onesignal",
+   "tool": "send_message",
+   "param": "delayed_option",
+   "description": "Controls per-user delivery timing. Options: `\"timezone\"`, `\"last-active\"`."
+  },
+  {
+   "server": "onesignal/onesignal",
+   "tool": "view_message",
+   "param": "outcome_time_range",
+   "description": "Time range for the returned outcome data.\n\nValid values: 1h, 1d, and 1mo."
+  },
+  {
+   "server": "onesignal/onesignal",
+   "tool": "view_message",
+   "param": "outcome_attribution",
+   "description": "Attribution type for the outcomes.\n\nValid values:\n- `\"direct\"`\n- `\"influenced\"`\n- `\"unattributed\"`\n- `\"total\"`"
+  },
+  {
+   "server": "github",
+   "tool": "sub_issue_write",
+   "param": "method",
+   "description": "The action to perform on a single sub-issue\nOptions are:\n- 'add' - add a sub-issue to a parent issue in a GitHub repository.\n- 'remove' - remove a sub-issue from a parent issue in a GitHub repository.\n- 'reprioritize' - "
+  },
+  {
+   "server": "oobe-protocol/sap-mcp",
+   "tool": "sap_x402_settle",
+   "param": "commitment",
+   "description": "Optional processed|confirmed|finalized commitment"
+  },
+  {
+   "server": "oobe-protocol/sap-mcp",
+   "tool": "sap_x402_settle_batch",
+   "param": "commitment",
+   "description": "Optional processed|confirmed|finalized commitment"
+  },
+  {
+   "server": "oobe-protocol/sap-mcp",
+   "tool": "sap_fairscale_score",
+   "param": "task",
+   "description": "Optional FairScale task type: one of \"defi_execution\", \"trust_focused\", \"work_focused\", \"hiring\""
+  },
+  {
+   "server": "ia-qa/api",
+   "tool": "redact_pii",
+   "param": "types",
+   "description": "Comma-separated types to redact (default: all). Options: email, phone, ssn, credit_card, ip_address, jwt"
+  },
+  {
+   "server": "ia-qa/api",
+   "tool": "secret_scan",
+   "param": "types",
+   "description": "Comma-separated types to scan (default: all). Options: aws, gcp, azure, openai, anthropic, stripe, github, gitlab, slack, twilio, sendgrid, huggingface, jwt, private_key, connection_string, bearer, basic_auth"
+  },
+  {
+   "server": "ia-qa/api",
+   "tool": "llm_fit_finder",
+   "param": "use_case",
+   "description": "Primary use case: chatbot | code | rag | summarization | classification | reasoning | agents | multilingual"
+  },
+  {
+   "server": "ia-qa/api",
+   "tool": "llm_fit_finder",
+   "param": "quantization",
+   "description": "Quantization (only for mode=local): Q4_K_M | Q8_0 | FP16. Default: Q4_K_M"
+  },
+  {
+   "server": "ia-qa/api",
+   "tool": "find_tool",
+   "param": "category",
+   "description": "Optional: filter by category \u2014 data | encoding | text | llm | qa | rag | dev | security | web"
+  },
+  {
+   "server": "listentosadhu/corpus",
+   "tool": "document_list",
+   "param": "kind",
+   "description": "commentary|prose_chapter|letter."
+  },
+  {
+   "server": "listentosadhu/corpus",
+   "tool": "search",
+   "param": "kind",
+   "description": "Document (commentary|prose_chapter|letter) or track (lecture|conversation) subtype."
+  },
+  {
+   "server": "pipeworx/gateway",
+   "tool": "get_employment_by_industry",
+   "param": "industry",
+   "description": "Industry to retrieve. One of: \"total_nonfarm\", \"manufacturing\", \"construction\", \"retail\", \"financial\", \"government\". Defaults to \"total_nonfarm\"."
+  },
+  {
+   "server": "pipeworx/gateway",
+   "tool": "joke_by_category",
+   "param": "category",
+   "description": "Category to fetch a joke from. Use list_categories to see valid values."
+  },
+  {
+   "server": "pipeworx/gateway",
+   "tool": "housing_mortgage_history",
+   "param": "window",
+   "description": "1m | 3m | 6m | 1y | 5y | all (default 1y)"
+  },
+  {
+   "server": "pipeworx/gateway",
+   "tool": "entreprises_fr_search",
+   "param": "employee_range",
+   "description": "Employee count band: NN | 00 | 01 | 02 | 03 | 11 | 12 | 21 | 22 | 31 | 32 | 41 | 42 | 51 | 52 | 53 (Sirene tranche codes)"
+  },
+  {
+   "server": "pipeworx/gateway",
+   "tool": "packagist_search",
+   "param": "type",
+   "description": "composer-plugin | library | symfony-bundle | wordpress-plugin | ..."
+  },
+  {
+   "server": "pipeworx/gateway",
+   "tool": "pv_performance",
+   "param": "pvtechchoice",
+   "description": "crystSi | CIS | CdTe | Unknown. Default crystSi."
+  },
+  {
+   "server": "pipeworx/gateway",
+   "tool": "open_meteo_forecast",
+   "param": "wind_speed_unit",
+   "description": "kmh | ms | mph | kn"
+  },
+  {
+   "server": "pipeworx/gateway",
+   "tool": "team_roster",
+   "param": "roster_type",
+   "description": "active | 40Man | depthChart | fullSeason | fullRoster"
+  },
+  {
+   "server": "pipeworx/gateway",
+   "tool": "mlb_stats_player_stats",
+   "param": "group",
+   "description": "hitting | pitching | fielding (default hitting)"
+  },
+  {
+   "server": "pipeworx/gateway",
+   "tool": "mlb_stats_player_stats",
+   "param": "stats",
+   "description": "season (default) | career | yearByYear | seasonAdvanced"
+  },
+  {
+   "server": "pipeworx/gateway",
+   "tool": "get_odds",
+   "param": "markets",
+   "description": "h2h | spreads | totals | outrights \u2014 comma-sep (default h2h)"
+  }
+ ],
+ "undescribed_param": [
+  {
+   "server": "adamamer20/paper-search-mcp-openai",
+   "tool": "search",
+   "param": "query"
+  },
+  {
+   "server": "adamamer20/paper-search-mcp-openai",
+   "tool": "search",
+   "param": "max_results"
+  },
+  {
+   "server": "adamamer20/paper-search-mcp-openai",
+   "tool": "fetch",
+   "param": "id"
+  },
+  {
+   "server": "adamamer20/paper-search-mcp-openai",
+   "tool": "fetch",
+   "param": "document_id"
+  },
+  {
+   "server": "adamamer20/paper-search-mcp-openai",
+   "tool": "search_arxiv",
+   "param": "query"
+  },
+  {
+   "server": "adamamer20/paper-search-mcp-openai",
+   "tool": "search_arxiv",
+   "param": "max_results"
+  },
+  {
+   "server": "adamamer20/paper-search-mcp-openai",
+   "tool": "search_pubmed",
+   "param": "query"
+  },
+  {
+   "server": "adamamer20/paper-search-mcp-openai",
+   "tool": "search_pubmed",
+   "param": "max_results"
+  },
+  {
+   "server": "adamamer20/paper-search-mcp-openai",
+   "tool": "search_biorxiv",
+   "param": "query"
+  },
+  {
+   "server": "adamamer20/paper-search-mcp-openai",
+   "tool": "search_biorxiv",
+   "param": "max_results"
+  },
+  {
+   "server": "adamamer20/paper-search-mcp-openai",
+   "tool": "search_medrxiv",
+   "param": "query"
+  },
+  {
+   "server": "adamamer20/paper-search-mcp-openai",
+   "tool": "search_medrxiv",
+   "param": "max_results"
+  },
+  {
+   "server": "adamamer20/paper-search-mcp-openai",
+   "tool": "search_google_scholar",
+   "param": "query"
+  },
+  {
+   "server": "adamamer20/paper-search-mcp-openai",
+   "tool": "search_google_scholar",
+   "param": "max_results"
+  },
+  {
+   "server": "adamamer20/paper-search-mcp-openai",
+   "tool": "search_iacr",
+   "param": "query"
+  },
+  {
+   "server": "adamamer20/paper-search-mcp-openai",
+   "tool": "search_iacr",
+   "param": "max_results"
+  },
+  {
+   "server": "adamamer20/paper-search-mcp-openai",
+   "tool": "search_iacr",
+   "param": "fetch_details"
+  },
+  {
+   "server": "adamamer20/paper-search-mcp-openai",
+   "tool": "download_arxiv",
+   "param": "paper_id"
+  },
+  {
+   "server": "adamamer20/paper-search-mcp-openai",
+   "tool": "download_arxiv",
+   "param": "save_path"
+  },
+  {
+   "server": "adamamer20/paper-search-mcp-openai",
+   "tool": "download_pubmed",
+   "param": "paper_id"
+  },
+  {
+   "server": "adamamer20/paper-search-mcp-openai",
+   "tool": "download_pubmed",
+   "param": "save_path"
+  },
+  {
+   "server": "adamamer20/paper-search-mcp-openai",
+   "tool": "download_biorxiv",
+   "param": "paper_id"
+  },
+  {
+   "server": "adamamer20/paper-search-mcp-openai",
+   "tool": "download_biorxiv",
+   "param": "save_path"
+  },
+  {
+   "server": "adamamer20/paper-search-mcp-openai",
+   "tool": "download_medrxiv",
+   "param": "paper_id"
+  },
+  {
+   "server": "adamamer20/paper-search-mcp-openai",
+   "tool": "download_medrxiv",
+   "param": "save_path"
+  }
+ ],
+ "undescribed_tool": [
+  {
+   "server": "etweisberg/mlb-mcp",
+   "tool": "get_stats"
+  },
+  {
+   "server": "etweisberg/mlb-mcp",
+   "tool": "get_stats"
+  },
+  {
+   "server": "etweisberg/mlb-mcp",
+   "tool": "get_stats"
+  },
+  {
+   "server": "hypnoticmeditations/meditation-recommender",
+   "tool": "get_recommendation"
+  },
+  {
+   "server": "hypnoticmeditations/meditation-recommender",
+   "tool": "list_products"
+  },
+  {
+   "server": "shadow/shadow",
+   "tool": "search_knowledge_base"
+  },
+  {
+   "server": "shadow/shadow",
+   "tool": "read_kb_page"
+  },
+  {
+   "server": "shadow/shadow",
+   "tool": "query_data"
+  },
+  {
+   "server": "shadow/shadow",
+   "tool": "list_integrations"
+  },
+  {
+   "server": "shadow/shadow",
+   "tool": "get_org_context"
+  },
+  {
+   "server": "shadow/shadow",
+   "tool": "get_workspace_context"
+  },
+  {
+   "server": "shadow/shadow",
+   "tool": "get_recent_threads"
+  },
+  {
+   "server": "shadow/shadow",
+   "tool": "query_shopify_cohorts"
+  },
+  {
+   "server": "shadow/shadow",
+   "tool": "slack"
+  },
+  {
+   "server": "shadow/shadow",
+   "tool": "google_drive"
+  },
+  {
+   "server": "shadow/shadow",
+   "tool": "memory"
+  },
+  {
+   "server": "shadow/shadow",
+   "tool": "memory_update"
+  },
+  {
+   "server": "shadow/shadow",
+   "tool": "query_combined_dtc_data"
+  },
+  {
+   "server": "shadow/shadow",
+   "tool": "meetings"
+  },
+  {
+   "server": "shadow/shadow",
+   "tool": "get_creative_performance_cards"
+  },
+  {
+   "server": "shadow/shadow",
+   "tool": "analyze_media"
+  },
+  {
+   "server": "shadow/shadow",
+   "tool": "list_skills"
+  },
+  {
+   "server": "shadow/shadow",
+   "tool": "get_skill"
+  },
+  {
+   "server": "shadow/shadow",
+   "tool": "read_skill_file"
+  },
+  {
+   "server": "shadow/shadow",
+   "tool": "calculate"
+  }
+ ]
+}

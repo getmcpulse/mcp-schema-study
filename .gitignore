@@ -1,0 +1,16 @@
+# The raw corpus is ~35 KB per server across a few thousand servers, which is
+# a couple of hundred megabytes — too big for a repo, and not ours to
+# redistribute wholesale anyway.
+#
+# `01_collect.py` regenerates it from a public API in about twenty minutes, and
+# the two files that ARE committed — analysis.json and examples.json — carry
+# every figure in the post plus the real instances behind each one, so the
+# numbers can be checked without re-running anything.
+data/frame.jsonl
+data/tools.jsonl
+data/servers.jsonl
+data/collect.log
+
+__pycache__/
+*.pyc
+.venv/
