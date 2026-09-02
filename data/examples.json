@@ -166,7 +166,7 @@
   },
   {
    "server": "onesignal/onesignal",
-   "similarity": 0.857,
+   "similarity": 0.858,
    "a": {
     "name": "get_template",
     "description": "Retrieve a single notification template by ID."
@@ -178,7 +178,7 @@
   },
   {
    "server": "github",
-   "similarity": 0.894,
+   "similarity": 0.896,
    "a": {
     "name": "list_org_repository_security_advisories",
     "description": "List repository security advisories for a GitHub organization."
@@ -214,7 +214,7 @@
   },
   {
    "server": "bigquery",
-   "similarity": 0.822,
+   "similarity": 0.82,
    "a": {
     "name": "get_dataset_info",
     "description": "Get metadata information about a BigQuery dataset."
@@ -238,7 +238,7 @@
   },
   {
    "server": "adamamer20/paper-search-mcp-openai",
-   "similarity": 0.926,
+   "similarity": 0.927,
    "a": {
     "name": "download_semantic",
     "description": "Download PDF of a Semantic Scholar paper.    \n\n    Args:\n        paper_id: Semantic Scholar paper ID, Paper identifier in one of the following formats:\n            - Semantic Scholar ID (e.g., \"649def"
@@ -274,7 +274,7 @@
   },
   {
    "server": "segellfosc-dev-ayfx/menjometre",
-   "similarity": 0.89,
+   "similarity": 0.891,
    "a": {
     "name": "get_person_network",
     "description": "BFS from a single person up to a max depth (hard-capped at 3)."
@@ -286,7 +286,7 @@
   },
   {
    "server": "TitanSneaker/paper-search-mcp-openai-v2",
-   "similarity": 0.926,
+   "similarity": 0.927,
    "a": {
     "name": "download_semantic",
     "description": "Download PDF of a Semantic Scholar paper.    \n\n    Args:\n        paper_id: Semantic Scholar paper ID, Paper identifier in one of the following formats:\n            - Semantic Scholar ID (e.g., \"649def"
@@ -298,7 +298,7 @@
   },
   {
    "server": "boar-network/blockchain-basic",
-   "similarity": 0.924,
+   "similarity": 0.925,
    "a": {
     "name": "btc_get_mempool_info",
     "description": "Get mempool fee histogram on Bitcoin mainnet. Returns array of [fee_rate, cumulative_vsize] pairs showing the distribution of transactions in the mempool by fee rate (sat/vB)."
@@ -312,12 +312,12 @@
    "server": "pipeworx/gateway",
    "similarity": 1.0,
    "a": {
-    "name": "ror_search",
-    "description": "Search organizations."
+    "name": "wiktionary_summary",
+    "description": "Page summary."
    },
    "b": {
-    "name": "search_organizations",
-    "description": "Search organizations."
+    "name": "wikiquote_summary",
+    "description": "Page summary."
    }
   },
   {
@@ -345,6 +345,18 @@
    }
   },
   {
+   "server": "EthanHenrickson/math-mcp",
+   "similarity": 1.0,
+   "a": {
+    "name": "ceiling",
+    "description": "Rounds a number up to the nearest integer"
+   },
+   "b": {
+    "name": "round",
+    "description": "Rounds a number to the nearest integer"
+   }
+  },
+  {
    "server": "aparajithn/agent-utils",
    "similarity": 1.0,
    "a": {
@@ -358,7 +370,7 @@
   },
   {
    "server": "dev-7bd0/mcp-server",
-   "similarity": 0.809,
+   "similarity": 0.821,
    "a": {
     "name": "legal_fetch_patent_by_number",
     "description": "Fetch full patent details by patent number and jurisdiction. Read-only. No side effects. Idempotent. patent_number: Patent number in EPODOC format e.g. EP1000000 for European, CN120586032 for Chinese,"
@@ -394,7 +406,7 @@
   },
   {
    "server": "hithereiamaliff/mcp-datagovmy",
-   "similarity": 0.964,
+   "similarity": 0.965,
    "a": {
     "name": "datagovmy_search_datasets_catalogue",
     "description": "\u26a0\ufe0f CONSIDER USING search_all INSTEAD: This only searches datasets. For comprehensive results across datasets and dashboards, use search_all tool. \u26a0\ufe0f"
@@ -418,7 +430,7 @@
   },
   {
    "server": "satoshidata/wallet-intelligence",
-   "similarity": 0.836,
+   "similarity": 0.837,
    "a": {
     "name": "entity_list",
     "description": "Return named Bitcoin entity rollups, optionally filtered by category. coverage_status indicates whether each rollup is full, substantial, partial, or seed-only coverage; last_activity_at is label-DB a"
@@ -430,7 +442,7 @@
   },
   {
    "server": "rabqatab/lexlink-ko-mcp",
-   "similarity": 0.939,
+   "similarity": 0.938,
    "a": {
     "name": "lstrm_rlt_jo_search",
     "description": "\n        Legal term to article linkage (\ubc95\ub839\uc6a9\uc5b4\u2192\uc870\ubb38 \uc5f0\uacc4 \uc870\ud68c).\n\n        This tool searches the linkage between legal terms and the specific\n        law articles where those terms are used or defined.\n\n      "
@@ -438,18 +450,6 @@
    "b": {
     "name": "jo_rlt_lstrm_search",
     "description": "\n        Article to legal term linkage (\uc870\ubb38\u2192\ubc95\ub839\uc6a9\uc5b4 \uc5f0\uacc4 \uc870\ud68c).\n\n        This tool searches the linkage from specific law articles to the\n        legal terms defined or used within those articles. Useful for "
-   }
-  },
-  {
-   "server": "jalpp/chessagine",
-   "similarity": 0.914,
-   "a": {
-    "name": "get-stockfish-best-move",
-    "description": "Find the best move in a chess position using Stockfish 18 Multi-threated Lite WASM engine"
-   },
-   "b": {
-    "name": "get-stockfish-multipv-analysis",
-    "description": "Analyze a chess position and get multiple best move candidates with Stockfish 18 Multi-threated Lite WASM engine"
    }
   }
  ],
@@ -738,14 +738,6 @@
    "tool": "get_stats"
   },
   {
-   "server": "etweisberg/mlb-mcp",
-   "tool": "get_stats"
-  },
-  {
-   "server": "etweisberg/mlb-mcp",
-   "tool": "get_stats"
-  },
-  {
    "server": "hypnoticmeditations/meditation-recommender",
    "tool": "get_recommendation"
   },
@@ -832,6 +824,14 @@
   {
    "server": "shadow/shadow",
    "tool": "calculate"
+  },
+  {
+   "server": "shadow/shadow",
+   "tool": "billing"
+  },
+  {
+   "server": "shadow/shadow",
+   "tool": "list_workspace_models"
   }
  ]
 }

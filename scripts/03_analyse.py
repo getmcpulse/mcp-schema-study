@@ -136,11 +136,53 @@ def cosine(a, b):
 
 
 def load():
-    rows = []
+    """Every collected row, deduplicated by server.
+
+    ── Why this deduplicates ─────────────────────────────────────────────────
+    The collector revisits servers while paginating the popular pool, so
+    `tools.jsonl` contains the same `qualifiedName` more than once: 5,123 rows
+    for 4,894 distinct servers. 104 of the 125 repeated names carry byte-
+    identical tool lists — the same server collected twice — and the remaining
+    21 pair a failed scrape (`tools == []`) with a successful one.
+
+    Counting rows therefore inflated every total and, worse, weighted a server
+    by how many times it happened to be collected. It landed almost entirely on
+    one pool: the popular pool reported 465 servers and holds 263, a 77%
+    overcount, while the long tail was clean at 4,486.
+
+    The rates barely moved when this was fixed — undescribed parameters 21.8% ->
+    21.5%, zero-distinctive tools 17.4% -> 17.7% — which is why it went unnoticed.
+    The counts moved a lot: 4,951 servers -> 4,749, 87,146 tools -> 82,549.
+
+    ── Why it keeps the row with tools ───────────────────────────────────────
+    For the 21 names where the two rows differ, one is a scrape that returned
+    nothing. Keeping the longer list keeps the server in the corpus rather than
+    discarding it as tool-less.
+
+    That is not, however, what moved `tools == []` from 13 to 8. Checked: none
+    of those 8 names published tools in any other row. The 13 was 8 servers
+    counted repeatedly — one of them four times — so the drop is the same
+    double-count as everywhere else, not a rescue.
+    """
+    best = {}
+    order = []
+
     with open(os.path.join(DATA, "tools.jsonl")) as f:
         for line in f:
-            rows.append(json.loads(line))
-    return rows
+            row = json.loads(line)
+            name = row.get("qualifiedName")
+            existing = best.get(name)
+
+            if existing is None:
+                best[name] = row
+                order.append(name)
+                continue
+
+            # Prefer whichever row actually came back with tools.
+            if len(row.get("tools") or []) > len(existing.get("tools") or []):
+                best[name] = row
+
+    return [best[name] for name in order]
 
 
 def describes_its_values(text):
