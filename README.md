@@ -7,6 +7,8 @@ servers](https://getmcpulse.com/blog/reading-5000-mcp-schemas).
 Everything below is reproducible with Python 3.12, `httpx`, and about twenty
 minutes.
 
+**[getmcpulse.com](https://getmcpulse.com)** · [Docs](https://docs.getmcpulse.com) · [Dashboard](https://app.getmcpulse.com)
+
 ```bash
 python3 scripts/01_collect.py              # build the corpus
 python3 scripts/02_validate_ground_truth.py # check the corpus is trustworthy
@@ -145,6 +147,6 @@ they want to check that too.
 
 ## Licence
 
-Code MIT. The collected data belongs to the Smithery registry and its
-publishers; the committed files are derived statistics and short excerpts, not
-a redistribution of the corpus.
+Code MIT, in [LICENSE](LICENSE). The collected data belongs to the Smithery
+registry and its publishers; the committed files are derived statistics and
+short excerpts, not a redistribution of the corpus.
