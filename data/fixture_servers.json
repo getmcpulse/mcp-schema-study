@@ -1,0 +1,233 @@
+{
+ "firstexhotic/ai-applyd": [
+  {
+   "name": "score_resume",
+   "description": "Score a resume against a job description for ATS compatibility. Returns keyword match score, missing keywords, section scores, and improvement recommendations. Deterministic keyword scoring, uses no AI credits, but requires a connected AI Applyd account.",
+   "inputSchema": {
+    "type": "object",
+    "properties": {
+     "resume_text": {
+      "type": "string",
+      "maxLength": 50000,
+      "minLength": 50,
+      "description": "Full text of the resume"
+     },
+     "job_description": {
+      "type": "string",
+      "maxLength": 50000,
+      "minLength": 50,
+      "description": "Full text of the job description"
+     }
+    }
+   }
+  },
+  {
+   "name": "analyze_job_description",
+   "description": "Analyze a job description to extract required skills, nice-to-haves, red flags, and estimated seniority level. Deterministic analysis, uses no AI credits, but requires a connected AI Applyd account.",
+   "inputSchema": {
+    "type": "object",
+    "properties": {
+     "job_description": {
+      "type": "string",
+      "maxLength": 50000,
+      "minLength": 50,
+      "description": "Full text of the job description"
+     }
+    }
+   }
+  },
+  {
+   "name": "score_resume_ai",
+   "description": "AI-powered ATS scoring with detailed section-by-section feedback, gap analysis, requirement mapping, and keyword strategy. Provide a job_description to score against a specific posting, or omit it for a general ATS readiness score. Requires authentication -- sign in at https://aiapplyd.com first. Free alternative: use score_resume for keyword-based scoring.",
+   "inputSchema": {
+    "type": "object",
+    "properties": {
+     "resume_text": {
+      "type": "string",
+      "maxLength": 50000,
+      "minLength": 50,
+      "description": "Full text of the resume"
+     },
+     "job_description": {
+      "type": "string",
+      "maxLength": 50000,
+      "minLength": 50,
+      "description": "Full text of the job description (optional -- omit for a general ATS readiness score)"
+     }
+    }
+   }
+  },
+  {
+   "name": "optimize_resume",
+   "description": "AI-powered resume optimization. Rewrites your resume to be more ATS-compatible and returns the optimized content plus a summary of changes. Provide a job_description to tailor the rewrite to a specific posting, or omit it for general ATS optimization. Requires authentication.",
+   "inputSchema": {
+    "type": "object",
+    "properties": {
+     "resume_text": {
+      "type": "string",
+      "maxLength": 50000,
+      "minLength": 50,
+      "description": "Full text of the resume to optimize"
+     },
+     "job_description": {
+      "type": "string",
+      "maxLength": 50000,
+      "minLength": 50,
+      "description": "Full text of the target job description (optional -- omit for general ATS optimization)"
+     }
+    }
+   }
+  },
+  {
+   "name": "generate_interview_questions",
+   "description": "AI-powered interview preparation. Generates company insights, STAR scenarios, likely questions with approach guidance, talking points, questions to ask, and negotiation prep. Requires authentication.",
+   "inputSchema": {
+    "type": "object",
+    "properties": {
+     "job_title": {
+      "type": "string",
+      "maxLength": 200,
+      "minLength": 2,
+      "description": "Title of the position (e.g. \"Senior Software Engineer\")"
+     },
+     "company_name": {
+      "type": "string",
+      "maxLength": 200,
+      "minLength": 1,
+      "description": "Name of the company"
+     },
+     "job_description": {
+      "type": "string",
+      "maxLength": 50000,
+      "description": "Full text of the job description (optional but recommended for better results)"
+     }
+    }
+   }
+  },
+  {
+   "name": "translate_resume",
+   "description": "Translate a resume into a target language using AI. Creates a translated copy saved to your account. Requires authentication.",
+   "inputSchema": {
+    "type": "object",
+    "properties": {
+     "resume_text": {
+      "type": "string",
+      "maxLength": 50000,
+      "minLength": 50,
+      "description": "Full text of the resume to translate"
+     },
+     "target_language": {
+      "type": "string",
+      "maxLength": 50,
+      "minLength": 1,
+      "description": "Target language (e.g. \"Spanish\", \"French\", \"German\", \"Japanese\")"
+     }
+    }
+   }
+  },
+  {
+   "name": "search_jobs",
+   "description": "Search for job matches based on title, location, and remote preference. Returns AI-curated job listings with match scores, companies, and application URLs. Note: this tool updates your AI Applyd job-match preferences with the supplied filters so future matches reflect them. Requires authentication.",
+   "inputSchema": {
+    "type": "object",
+    "properties": {
+     "location": {
+      "type": "string",
+      "maxLength": 200,
+      "description": "Preferred location (e.g. \"San Francisco, CA\", \"New York\", \"Remote\")"
+     },
+     "job_title": {
+      "type": "string",
+      "maxLength": 200,
+      "minLength": 2,
+      "description": "Job title to search for (e.g. \"Software Engineer\", \"Product Manager\")"
+     },
+     "remote_only": {
+      "type": "boolean",
+      "description": "If true, only show remote-friendly positions"
+     }
+    }
+   }
+  },
+  {
+   "name": "generate_cover_letter",
+   "description": "AI-powered cover letter generation tailored to a specific job. Provide your resume, the job description, and company name. Returns a personalized cover letter with key themes. Requires paid plan (Hired in 30+).",
+   "inputSchema": {
+    "type": "object",
+    "properties": {
+     "tone": {
+      "enum": [
+       "professional",
+       "conversational",
+       "enthusiastic"
+      ],
+      "type": "string",
+      "description": "Writing tone (default: professional)"
+     },
+     "resume_text": {
+      "type": "string",
+      "maxLength": 50000,
+      "minLength": 50,
+      "description": "Full text of your resume"
+     },
+     "company_name": {
+      "type": "string",
+      "maxLength": 200,
+      "minLength": 1,
+      "description": "Name of the company you are applying to"
+     },
+     "job_description": {
+      "type": "string",
+      "maxLength": 50000,
+      "minLength": 50,
+      "description": "Full text of the target job description"
+     }
+    }
+   }
+  },
+  {
+   "name": "auto_apply",
+   "description": "Automatically apply to a job using AI. Tailors your resume, generates a cover letter, and submits the application. Provide the job URL and optionally your resume text. Requires paid plan (Hired in 30+).",
+   "inputSchema": {
+    "type": "object",
+    "properties": {
+     "job_url": {
+      "type": "string",
+      "format": "uri",
+      "description": "URL of the job posting to apply to"
+     },
+     "resume_text": {
+      "type": "string",
+      "maxLength": 50000,
+      "minLength": 50,
+      "description": "Full text of your resume (uses your default resume if not provided)"
+     }
+    }
+   }
+  },
+  {
+   "name": "build_pdf",
+   "description": "Generate a professional PDF resume from text. Choose from modern, classic, or minimal templates. The PDF is saved to your account with a shareable link. Requires paid plan (Hired in 30+).",
+   "inputSchema": {
+    "type": "object",
+    "properties": {
+     "template": {
+      "enum": [
+       "classic",
+       "modern",
+       "minimal"
+      ],
+      "type": "string",
+      "description": "Resume template style (default: classic)"
+     },
+     "resume_text": {
+      "type": "string",
+      "maxLength": 50000,
+      "minLength": 50,
+      "description": "Full text of the resume to convert to PDF"
+     }
+    }
+   }
+  }
+ ]
+}

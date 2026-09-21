@@ -102,12 +102,22 @@ def list_tools(cmd):
             proc.kill()
 
 
+#: The MCP tool hints a client reads when deciding whether to prompt the user.
+#:
+#: Checked here for the same reason `required` is: the corpus carries the field
+#: for **not one** of 82,549 tools, and a study that reported "0% of servers set
+#: `destructiveHint`" without establishing why would be publishing a fact about
+#: the registry as if it were a fact about MCP authors.
+ANNOTATION_HINTS = ("readOnlyHint", "destructiveHint", "idempotentHint", "openWorldHint")
+
+
 def summarise(tools):
-    """The three facts the study depends on, per tool."""
+    """The facts the study depends on, per tool."""
     out = {}
     for t in tools:
         schema = t.get("inputSchema") or {}
         props = schema.get("properties") or {}
+        annotations = t.get("annotations")
         out[t["name"]] = {
             "n_params": len(props),
             "has_required": bool(schema.get("required")),
@@ -117,6 +127,16 @@ def summarise(tools):
             "n_enum": sum(1 for p in props.values()
                           if isinstance(p, dict) and p.get("enum")),
             "has_description": bool(t.get("description")),
+            # ── the second stripped field, checked the same way as the first ──
+            "has_annotations": isinstance(annotations, dict) and bool(annotations),
+            "annotation_keys": sorted(annotations) if isinstance(annotations, dict) else [],
+            "hints_set": [h for h in ANNOTATION_HINTS
+                          if isinstance(annotations, dict) and h in annotations],
+            # `outputSchema` survives the registry — 28.5% of sampled tools
+            # carry one — so this is a control rather than a suspect: if the
+            # reference servers emit it and the registry reports it, the
+            # pipeline is not dropping everything it does not understand.
+            "has_output_schema": bool(t.get("outputSchema")),
         }
     return out
 
@@ -135,15 +155,24 @@ def main():
             continue
         truth[name] = summarise(tools)
         withreq = sum(1 for v in truth[name].values() if v["has_required"])
-        print(f"  {len(tools)} tools, {withreq} with a top-level `required`")
+        withann = sum(1 for v in truth[name].values() if v["has_annotations"])
+        without = sum(1 for v in truth[name].values() if v["has_output_schema"])
+        print(f"  {len(tools)} tools, {withreq} with a top-level `required`, "
+              f"{withann} with annotations, {without} with an outputSchema")
 
     with open(os.path.join(OUT, "ground_truth.json"), "w") as f:
         json.dump(truth, f, indent=1)
 
     total = sum(len(v) for v in truth.values())
     withreq = sum(1 for v in truth.values() for t in v.values() if t["has_required"])
+    withann = sum(1 for v in truth.values() for t in v.values() if t["has_annotations"])
+    without = sum(1 for v in truth.values() for t in v.values() if t["has_output_schema"])
+    hints = sorted({h for v in truth.values() for t in v.values() for h in t["hints_set"]})
+
     print(f"\nground truth: {total} tools across {len(truth)} servers")
     print(f"  carry a top-level `required` : {withreq}")
+    print(f"  carry `annotations`          : {withann}   hints seen: {hints or 'none'}")
+    print(f"  carry an `outputSchema`      : {without}")
 
     if total and withreq == 0:
         print("\n  → real servers also omit `required`. The registry is not the cause.")
@@ -152,6 +181,22 @@ def main():
               f"registry reported it for none.\n"
               f"    The registry normalises schemas. `required` is unusable, and every\n"
               f"    other field needs checking before it is trusted.")
+
+    # ── annotations, the same question asked again ──────────────────────────
+    #
+    # The corpus carries `annotations` for none of its 82,549 tools. That is
+    # either "MCP authors do not set them" or "the registry drops them", and the
+    # two lead to opposite write-ups. Only booting a server settles it.
+    if total and withann == 0:
+        print("\n  → real servers also omit `annotations`. Nothing can be concluded\n"
+              "    about how often authors set them without a different corpus —\n"
+              "    these four are reference implementations, not a sample.")
+    elif withann:
+        print(f"\n  → real servers DO emit `annotations` ({withann}/{total}), and the\n"
+              f"    registry reported them for none of 82,549 tools.\n"
+              f"    So the annotations check cannot run on this corpus. It runs in the\n"
+              f"    checker, where an author pastes their own `tools/list` and the\n"
+              f"    field is present.")
 
 
 if __name__ == "__main__":

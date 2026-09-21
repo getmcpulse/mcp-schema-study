@@ -6,7 +6,21 @@
    "n_required": 4,
    "n_described": 9,
    "n_enum": 0,
-   "has_description": true
+   "has_description": true,
+   "has_annotations": true,
+   "annotation_keys": [
+    "destructiveHint",
+    "idempotentHint",
+    "openWorldHint",
+    "readOnlyHint"
+   ],
+   "hints_set": [
+    "readOnlyHint",
+    "destructiveHint",
+    "idempotentHint",
+    "openWorldHint"
+   ],
+   "has_output_schema": true
   }
  },
  "memory": {
@@ -16,7 +30,21 @@
    "n_required": 1,
    "n_described": 0,
    "n_enum": 0,
-   "has_description": true
+   "has_description": true,
+   "has_annotations": true,
+   "annotation_keys": [
+    "destructiveHint",
+    "idempotentHint",
+    "openWorldHint",
+    "readOnlyHint"
+   ],
+   "hints_set": [
+    "readOnlyHint",
+    "destructiveHint",
+    "idempotentHint",
+    "openWorldHint"
+   ],
+   "has_output_schema": true
   },
   "create_relations": {
    "n_params": 1,
@@ -24,7 +52,21 @@
    "n_required": 1,
    "n_described": 0,
    "n_enum": 0,
-   "has_description": true
+   "has_description": true,
+   "has_annotations": true,
+   "annotation_keys": [
+    "destructiveHint",
+    "idempotentHint",
+    "openWorldHint",
+    "readOnlyHint"
+   ],
+   "hints_set": [
+    "readOnlyHint",
+    "destructiveHint",
+    "idempotentHint",
+    "openWorldHint"
+   ],
+   "has_output_schema": true
   },
   "add_observations": {
    "n_params": 1,
@@ -32,7 +74,21 @@
    "n_required": 1,
    "n_described": 0,
    "n_enum": 0,
-   "has_description": true
+   "has_description": true,
+   "has_annotations": true,
+   "annotation_keys": [
+    "destructiveHint",
+    "idempotentHint",
+    "openWorldHint",
+    "readOnlyHint"
+   ],
+   "hints_set": [
+    "readOnlyHint",
+    "destructiveHint",
+    "idempotentHint",
+    "openWorldHint"
+   ],
+   "has_output_schema": true
   },
   "delete_entities": {
    "n_params": 1,
@@ -40,7 +96,21 @@
    "n_required": 1,
    "n_described": 1,
    "n_enum": 0,
-   "has_description": true
+   "has_description": true,
+   "has_annotations": true,
+   "annotation_keys": [
+    "destructiveHint",
+    "idempotentHint",
+    "openWorldHint",
+    "readOnlyHint"
+   ],
+   "hints_set": [
+    "readOnlyHint",
+    "destructiveHint",
+    "idempotentHint",
+    "openWorldHint"
+   ],
+   "has_output_schema": true
   },
   "delete_observations": {
    "n_params": 1,
@@ -48,7 +118,21 @@
    "n_required": 1,
    "n_described": 0,
    "n_enum": 0,
-   "has_description": true
+   "has_description": true,
+   "has_annotations": true,
+   "annotation_keys": [
+    "destructiveHint",
+    "idempotentHint",
+    "openWorldHint",
+    "readOnlyHint"
+   ],
+   "hints_set": [
+    "readOnlyHint",
+    "destructiveHint",
+    "idempotentHint",
+    "openWorldHint"
+   ],
+   "has_output_schema": true
   },
   "delete_relations": {
    "n_params": 1,
@@ -56,7 +140,21 @@
    "n_required": 1,
    "n_described": 1,
    "n_enum": 0,
-   "has_description": true
+   "has_description": true,
+   "has_annotations": true,
+   "annotation_keys": [
+    "destructiveHint",
+    "idempotentHint",
+    "openWorldHint",
+    "readOnlyHint"
+   ],
+   "hints_set": [
+    "readOnlyHint",
+    "destructiveHint",
+    "idempotentHint",
+    "openWorldHint"
+   ],
+   "has_output_schema": true
   },
   "read_graph": {
    "n_params": 0,
@@ -64,7 +162,21 @@
    "n_required": 0,
    "n_described": 0,
    "n_enum": 0,
-   "has_description": true
+   "has_description": true,
+   "has_annotations": true,
+   "annotation_keys": [
+    "destructiveHint",
+    "idempotentHint",
+    "openWorldHint",
+    "readOnlyHint"
+   ],
+   "hints_set": [
+    "readOnlyHint",
+    "destructiveHint",
+    "idempotentHint",
+    "openWorldHint"
+   ],
+   "has_output_schema": true
   },
   "search_nodes": {
    "n_params": 1,
@@ -72,7 +184,21 @@
    "n_required": 1,
    "n_described": 1,
    "n_enum": 0,
-   "has_description": true
+   "has_description": true,
+   "has_annotations": true,
+   "annotation_keys": [
+    "destructiveHint",
+    "idempotentHint",
+    "openWorldHint",
+    "readOnlyHint"
+   ],
+   "hints_set": [
+    "readOnlyHint",
+    "destructiveHint",
+    "idempotentHint",
+    "openWorldHint"
+   ],
+   "has_output_schema": true
   },
   "open_nodes": {
    "n_params": 1,
@@ -80,7 +206,21 @@
    "n_required": 1,
    "n_described": 1,
    "n_enum": 0,
-   "has_description": true
+   "has_description": true,
+   "has_annotations": true,
+   "annotation_keys": [
+    "destructiveHint",
+    "idempotentHint",
+    "openWorldHint",
+    "readOnlyHint"
+   ],
+   "hints_set": [
+    "readOnlyHint",
+    "destructiveHint",
+    "idempotentHint",
+    "openWorldHint"
+   ],
+   "has_output_schema": true
   }
  },
  "everything": {
@@ -90,7 +230,21 @@
    "n_required": 1,
    "n_described": 1,
    "n_enum": 0,
-   "has_description": true
+   "has_description": true,
+   "has_annotations": true,
+   "annotation_keys": [
+    "destructiveHint",
+    "idempotentHint",
+    "openWorldHint",
+    "readOnlyHint"
+   ],
+   "hints_set": [
+    "readOnlyHint",
+    "destructiveHint",
+    "idempotentHint",
+    "openWorldHint"
+   ],
+   "has_output_schema": false
   },
   "get-annotated-message": {
    "n_params": 2,
@@ -98,7 +252,21 @@
    "n_required": 1,
    "n_described": 2,
    "n_enum": 1,
-   "has_description": true
+   "has_description": true,
+   "has_annotations": true,
+   "annotation_keys": [
+    "destructiveHint",
+    "idempotentHint",
+    "openWorldHint",
+    "readOnlyHint"
+   ],
+   "hints_set": [
+    "readOnlyHint",
+    "destructiveHint",
+    "idempotentHint",
+    "openWorldHint"
+   ],
+   "has_output_schema": false
   },
   "get-env": {
    "n_params": 0,
@@ -106,7 +274,21 @@
    "n_required": 0,
    "n_described": 0,
    "n_enum": 0,
-   "has_description": true
+   "has_description": true,
+   "has_annotations": true,
+   "annotation_keys": [
+    "destructiveHint",
+    "idempotentHint",
+    "openWorldHint",
+    "readOnlyHint"
+   ],
+   "hints_set": [
+    "readOnlyHint",
+    "destructiveHint",
+    "idempotentHint",
+    "openWorldHint"
+   ],
+   "has_output_schema": false
   },
   "get-resource-links": {
    "n_params": 1,
@@ -114,7 +296,21 @@
    "n_required": 0,
    "n_described": 1,
    "n_enum": 0,
-   "has_description": true
+   "has_description": true,
+   "has_annotations": true,
+   "annotation_keys": [
+    "destructiveHint",
+    "idempotentHint",
+    "openWorldHint",
+    "readOnlyHint"
+   ],
+   "hints_set": [
+    "readOnlyHint",
+    "destructiveHint",
+    "idempotentHint",
+    "openWorldHint"
+   ],
+   "has_output_schema": false
   },
   "get-resource-reference": {
    "n_params": 2,
@@ -122,7 +318,21 @@
    "n_required": 0,
    "n_described": 1,
    "n_enum": 1,
-   "has_description": true
+   "has_description": true,
+   "has_annotations": true,
+   "annotation_keys": [
+    "destructiveHint",
+    "idempotentHint",
+    "openWorldHint",
+    "readOnlyHint"
+   ],
+   "hints_set": [
+    "readOnlyHint",
+    "destructiveHint",
+    "idempotentHint",
+    "openWorldHint"
+   ],
+   "has_output_schema": false
   },
   "get-structured-content": {
    "n_params": 1,
@@ -130,7 +340,21 @@
    "n_required": 1,
    "n_described": 1,
    "n_enum": 1,
-   "has_description": true
+   "has_description": true,
+   "has_annotations": true,
+   "annotation_keys": [
+    "destructiveHint",
+    "idempotentHint",
+    "openWorldHint",
+    "readOnlyHint"
+   ],
+   "hints_set": [
+    "readOnlyHint",
+    "destructiveHint",
+    "idempotentHint",
+    "openWorldHint"
+   ],
+   "has_output_schema": true
   },
   "get-sum": {
    "n_params": 2,
@@ -138,7 +362,21 @@
    "n_required": 2,
    "n_described": 2,
    "n_enum": 0,
-   "has_description": true
+   "has_description": true,
+   "has_annotations": true,
+   "annotation_keys": [
+    "destructiveHint",
+    "idempotentHint",
+    "openWorldHint",
+    "readOnlyHint"
+   ],
+   "hints_set": [
+    "readOnlyHint",
+    "destructiveHint",
+    "idempotentHint",
+    "openWorldHint"
+   ],
+   "has_output_schema": false
   },
   "get-tiny-image": {
    "n_params": 0,
@@ -146,7 +384,21 @@
    "n_required": 0,
    "n_described": 0,
    "n_enum": 0,
-   "has_description": true
+   "has_description": true,
+   "has_annotations": true,
+   "annotation_keys": [
+    "destructiveHint",
+    "idempotentHint",
+    "openWorldHint",
+    "readOnlyHint"
+   ],
+   "hints_set": [
+    "readOnlyHint",
+    "destructiveHint",
+    "idempotentHint",
+    "openWorldHint"
+   ],
+   "has_output_schema": false
   },
   "gzip-file-as-resource": {
    "n_params": 3,
@@ -154,7 +406,21 @@
    "n_required": 0,
    "n_described": 3,
    "n_enum": 1,
-   "has_description": true
+   "has_description": true,
+   "has_annotations": true,
+   "annotation_keys": [
+    "destructiveHint",
+    "idempotentHint",
+    "openWorldHint",
+    "readOnlyHint"
+   ],
+   "hints_set": [
+    "readOnlyHint",
+    "destructiveHint",
+    "idempotentHint",
+    "openWorldHint"
+   ],
+   "has_output_schema": false
   },
   "toggle-simulated-logging": {
    "n_params": 0,
@@ -162,7 +428,21 @@
    "n_required": 0,
    "n_described": 0,
    "n_enum": 0,
-   "has_description": true
+   "has_description": true,
+   "has_annotations": true,
+   "annotation_keys": [
+    "destructiveHint",
+    "idempotentHint",
+    "openWorldHint",
+    "readOnlyHint"
+   ],
+   "hints_set": [
+    "readOnlyHint",
+    "destructiveHint",
+    "idempotentHint",
+    "openWorldHint"
+   ],
+   "has_output_schema": false
   },
   "toggle-subscriber-updates": {
    "n_params": 0,
@@ -170,7 +450,21 @@
    "n_required": 0,
    "n_described": 0,
    "n_enum": 0,
-   "has_description": true
+   "has_description": true,
+   "has_annotations": true,
+   "annotation_keys": [
+    "destructiveHint",
+    "idempotentHint",
+    "openWorldHint",
+    "readOnlyHint"
+   ],
+   "hints_set": [
+    "readOnlyHint",
+    "destructiveHint",
+    "idempotentHint",
+    "openWorldHint"
+   ],
+   "has_output_schema": false
   },
   "trigger-long-running-operation": {
    "n_params": 2,
@@ -178,7 +472,21 @@
    "n_required": 0,
    "n_described": 2,
    "n_enum": 0,
-   "has_description": true
+   "has_description": true,
+   "has_annotations": true,
+   "annotation_keys": [
+    "destructiveHint",
+    "idempotentHint",
+    "openWorldHint",
+    "readOnlyHint"
+   ],
+   "hints_set": [
+    "readOnlyHint",
+    "destructiveHint",
+    "idempotentHint",
+    "openWorldHint"
+   ],
+   "has_output_schema": false
   },
   "simulate-research-query": {
    "n_params": 2,
@@ -186,7 +494,21 @@
    "n_required": 1,
    "n_described": 2,
    "n_enum": 0,
-   "has_description": true
+   "has_description": true,
+   "has_annotations": true,
+   "annotation_keys": [
+    "destructiveHint",
+    "idempotentHint",
+    "openWorldHint",
+    "readOnlyHint"
+   ],
+   "hints_set": [
+    "readOnlyHint",
+    "destructiveHint",
+    "idempotentHint",
+    "openWorldHint"
+   ],
+   "has_output_schema": false
   }
  },
  "filesystem": {
@@ -196,7 +518,17 @@
    "n_required": 1,
    "n_described": 2,
    "n_enum": 0,
-   "has_description": true
+   "has_description": true,
+   "has_annotations": true,
+   "annotation_keys": [
+    "openWorldHint",
+    "readOnlyHint"
+   ],
+   "hints_set": [
+    "readOnlyHint",
+    "openWorldHint"
+   ],
+   "has_output_schema": true
   },
   "read_text_file": {
    "n_params": 3,
@@ -204,7 +536,17 @@
    "n_required": 1,
    "n_described": 2,
    "n_enum": 0,
-   "has_description": true
+   "has_description": true,
+   "has_annotations": true,
+   "annotation_keys": [
+    "openWorldHint",
+    "readOnlyHint"
+   ],
+   "hints_set": [
+    "readOnlyHint",
+    "openWorldHint"
+   ],
+   "has_output_schema": true
   },
   "read_media_file": {
    "n_params": 1,
@@ -212,7 +554,17 @@
    "n_required": 1,
    "n_described": 0,
    "n_enum": 0,
-   "has_description": true
+   "has_description": true,
+   "has_annotations": true,
+   "annotation_keys": [
+    "openWorldHint",
+    "readOnlyHint"
+   ],
+   "hints_set": [
+    "readOnlyHint",
+    "openWorldHint"
+   ],
+   "has_output_schema": true
   },
   "read_multiple_files": {
    "n_params": 1,
@@ -220,7 +572,17 @@
    "n_required": 1,
    "n_described": 1,
    "n_enum": 0,
-   "has_description": true
+   "has_description": true,
+   "has_annotations": true,
+   "annotation_keys": [
+    "openWorldHint",
+    "readOnlyHint"
+   ],
+   "hints_set": [
+    "readOnlyHint",
+    "openWorldHint"
+   ],
+   "has_output_schema": true
   },
   "write_file": {
    "n_params": 2,
@@ -228,7 +590,21 @@
    "n_required": 2,
    "n_described": 0,
    "n_enum": 0,
-   "has_description": true
+   "has_description": true,
+   "has_annotations": true,
+   "annotation_keys": [
+    "destructiveHint",
+    "idempotentHint",
+    "openWorldHint",
+    "readOnlyHint"
+   ],
+   "hints_set": [
+    "readOnlyHint",
+    "destructiveHint",
+    "idempotentHint",
+    "openWorldHint"
+   ],
+   "has_output_schema": true
   },
   "edit_file": {
    "n_params": 3,
@@ -236,7 +612,21 @@
    "n_required": 2,
    "n_described": 1,
    "n_enum": 0,
-   "has_description": true
+   "has_description": true,
+   "has_annotations": true,
+   "annotation_keys": [
+    "destructiveHint",
+    "idempotentHint",
+    "openWorldHint",
+    "readOnlyHint"
+   ],
+   "hints_set": [
+    "readOnlyHint",
+    "destructiveHint",
+    "idempotentHint",
+    "openWorldHint"
+   ],
+   "has_output_schema": true
   },
   "create_directory": {
    "n_params": 1,
@@ -244,7 +634,21 @@
    "n_required": 1,
    "n_described": 0,
    "n_enum": 0,
-   "has_description": true
+   "has_description": true,
+   "has_annotations": true,
+   "annotation_keys": [
+    "destructiveHint",
+    "idempotentHint",
+    "openWorldHint",
+    "readOnlyHint"
+   ],
+   "hints_set": [
+    "readOnlyHint",
+    "destructiveHint",
+    "idempotentHint",
+    "openWorldHint"
+   ],
+   "has_output_schema": true
   },
   "list_directory": {
    "n_params": 1,
@@ -252,7 +656,17 @@
    "n_required": 1,
    "n_described": 0,
    "n_enum": 0,
-   "has_description": true
+   "has_description": true,
+   "has_annotations": true,
+   "annotation_keys": [
+    "openWorldHint",
+    "readOnlyHint"
+   ],
+   "hints_set": [
+    "readOnlyHint",
+    "openWorldHint"
+   ],
+   "has_output_schema": true
   },
   "list_directory_with_sizes": {
    "n_params": 2,
@@ -260,7 +674,17 @@
    "n_required": 1,
    "n_described": 1,
    "n_enum": 1,
-   "has_description": true
+   "has_description": true,
+   "has_annotations": true,
+   "annotation_keys": [
+    "openWorldHint",
+    "readOnlyHint"
+   ],
+   "hints_set": [
+    "readOnlyHint",
+    "openWorldHint"
+   ],
+   "has_output_schema": true
   },
   "directory_tree": {
    "n_params": 2,
@@ -268,7 +692,17 @@
    "n_required": 1,
    "n_described": 0,
    "n_enum": 0,
-   "has_description": true
+   "has_description": true,
+   "has_annotations": true,
+   "annotation_keys": [
+    "openWorldHint",
+    "readOnlyHint"
+   ],
+   "hints_set": [
+    "readOnlyHint",
+    "openWorldHint"
+   ],
+   "has_output_schema": true
   },
   "move_file": {
    "n_params": 2,
@@ -276,7 +710,21 @@
    "n_required": 2,
    "n_described": 0,
    "n_enum": 0,
-   "has_description": true
+   "has_description": true,
+   "has_annotations": true,
+   "annotation_keys": [
+    "destructiveHint",
+    "idempotentHint",
+    "openWorldHint",
+    "readOnlyHint"
+   ],
+   "hints_set": [
+    "readOnlyHint",
+    "destructiveHint",
+    "idempotentHint",
+    "openWorldHint"
+   ],
+   "has_output_schema": true
   },
   "search_files": {
    "n_params": 3,
@@ -284,7 +732,17 @@
    "n_required": 2,
    "n_described": 0,
    "n_enum": 0,
-   "has_description": true
+   "has_description": true,
+   "has_annotations": true,
+   "annotation_keys": [
+    "openWorldHint",
+    "readOnlyHint"
+   ],
+   "hints_set": [
+    "readOnlyHint",
+    "openWorldHint"
+   ],
+   "has_output_schema": true
   },
   "get_file_info": {
    "n_params": 1,
@@ -292,7 +750,17 @@
    "n_required": 1,
    "n_described": 0,
    "n_enum": 0,
-   "has_description": true
+   "has_description": true,
+   "has_annotations": true,
+   "annotation_keys": [
+    "openWorldHint",
+    "readOnlyHint"
+   ],
+   "hints_set": [
+    "readOnlyHint",
+    "openWorldHint"
+   ],
+   "has_output_schema": true
   },
   "list_allowed_directories": {
    "n_params": 0,
@@ -300,7 +768,17 @@
    "n_required": 0,
    "n_described": 0,
    "n_enum": 0,
-   "has_description": true
+   "has_description": true,
+   "has_annotations": true,
+   "annotation_keys": [
+    "openWorldHint",
+    "readOnlyHint"
+   ],
+   "hints_set": [
+    "readOnlyHint",
+    "openWorldHint"
+   ],
+   "has_output_schema": true
   }
  }
 }

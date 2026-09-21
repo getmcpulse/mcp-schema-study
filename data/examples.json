@@ -1,10 +1,1731 @@
 {
+ "domain_nouns": [
+  {
+   "server": "brave",
+   "tools": 8,
+   "domain": [
+    "search"
+   ]
+  },
+  {
+   "server": "exa",
+   "tools": 2,
+   "domain": [
+    "best",
+    "clean",
+    "content",
+    "highlight",
+    "insufficient",
+    "page",
+    "text",
+    "url"
+   ]
+  },
+  {
+   "server": "pubmed",
+   "tools": 7,
+   "domain": [
+    "about",
+    "access",
+    "acm",
+    "acs",
+    "anatomy",
+    "arxiv",
+    "ask",
+    "astrophysics",
+    "biochemistry",
+    "biology",
+    "biomedical",
+    "cell"
+   ]
+  },
+  {
+   "server": "bigquery",
+   "tools": 5,
+   "domain": [
+    "bigquery"
+   ]
+  },
+  {
+   "server": "naver/search",
+   "tools": 12,
+   "domain": [
+    "search"
+   ]
+  },
+  {
+   "server": "pinkpixel-dev/web-scout-mcp",
+   "tools": 2,
+   "domain": [
+    "input",
+    "want"
+   ]
+  },
+  {
+   "server": "smithery-ai/national-weather-service",
+   "tools": 6,
+   "domain": [
+    "locate"
+   ]
+  },
+  {
+   "server": "NutriBalance/nutribalance-mcp",
+   "tools": 5,
+   "domain": [
+    "someone"
+   ]
+  },
+  {
+   "server": "aryankeluskar/polymarket-mcp",
+   "tools": 7,
+   "domain": [
+    "market"
+   ]
+  },
+  {
+   "server": "bissell-skyler/cityparity",
+   "tools": 6,
+   "domain": [
+    "citi",
+    "effect",
+    "json",
+    "plu",
+    "read",
+    "side",
+    "structur",
+    "summary",
+    "text"
+   ]
+  },
+  {
+   "server": "secureship/docs",
+   "tools": 4,
+   "domain": [
+    "api",
+    "secureship"
+   ]
+  },
+  {
+   "server": "nexgendata-apify/github-mcp-server",
+   "tools": 4,
+   "domain": [
+    "count",
+    "github",
+    "project",
+    "repository"
+   ]
+  },
+  {
+   "server": "malinoto/tracepass-mcp-server",
+   "tools": 6,
+   "domain": [
+    "action",
+    "arg",
+    "pass",
+    "passport",
+    "via"
+   ]
+  },
+  {
+   "server": "vivaldoeuropes/vivaldo-product-discovery",
+   "tools": 4,
+   "domain": [
+    "product",
+    "public",
+    "vivaldo"
+   ]
+  },
+  {
+   "server": "zachary-royals/devmatch",
+   "tools": 3,
+   "domain": [
+    "candid",
+    "github",
+    "result"
+   ]
+  },
+  {
+   "server": "vbhjckfd/lad-lviv-ua",
+   "tools": 5,
+   "domain": [
+    "live",
+    "map",
+    "need",
+    "numer",
+    "stop",
+    "user",
+    "vehicle"
+   ]
+  },
+  {
+   "server": "quelvio/mcp-server",
+   "tools": 3,
+   "domain": [
+    "call",
+    "chunk",
+    "knowledge",
+    "per",
+    "token"
+   ]
+  },
+  {
+   "server": "nitrofire-q/gread",
+   "tools": 5,
+   "domain": [
+    "repository"
+   ]
+  },
+  {
+   "server": "openclaw-hal9000/romulus-31780",
+   "tools": 3,
+   "domain": [
+    "game",
+    "rom"
+   ]
+  },
+  {
+   "server": "cyanheads/openalex-mcp-server",
+   "tools": 5,
+   "domain": [
+    "filter",
+    "openalex"
+   ]
+  },
+  {
+   "server": "FaresYoussef94/aws-knowledge-mcp",
+   "tools": 5,
+   "domain": [
+    "aws",
+    "inform"
+   ]
+  },
+  {
+   "server": "cyanheads/wikipedia-mcp-server",
+   "tools": 6,
+   "domain": [
+    "article"
+   ]
+  },
+  {
+   "server": "axel-belfort/event-resolver",
+   "tools": 3,
+   "domain": [
+    "market",
+    "need"
+   ]
+  },
+  {
+   "server": "larrybuildsai/resultrail",
+   "tools": 3,
+   "domain": [
+    "one",
+    "public"
+   ]
+  },
+  {
+   "server": "axel-belfort/hyperliquid-data",
+   "tools": 3,
+   "domain": [
+    "array",
+    "data",
+    "hyperliquid",
+    "need",
+    "perpetual"
+   ]
+  }
+ ],
+ "clusters": [
+  {
+   "server": "brave",
+   "tools": 8,
+   "domain": [
+    "search"
+   ],
+   "tightest": [
+    {
+     "noun": "address",
+     "shared_by": [
+      "brave_local_search",
+      "brave_place_search"
+     ]
+    },
+    {
+     "noun": "brave_web_search",
+     "shared_by": [
+      "brave_local_search",
+      "brave_summarizer"
+     ]
+    },
+    {
+     "noun": "current",
+     "shared_by": [
+      "brave_news_search",
+      "brave_local_search"
+     ]
+    },
+    {
+     "noun": "enrich",
+     "shared_by": [
+      "brave_web_search",
+      "brave_local_search"
+     ]
+    },
+    {
+     "noun": "first",
+     "shared_by": [
+      "brave_local_search",
+      "brave_summarizer"
+     ]
+    }
+   ]
+  },
+  {
+   "server": "gmail",
+   "tools": 31,
+   "domain": [],
+   "tightest": [
+    {
+     "noun": "accept",
+     "shared_by": [
+      "Gmail_ChangeEmailLabels",
+      "Gmail_UnsubscribeFromEmail"
+     ]
+    },
+    {
+     "noun": "action",
+     "shared_by": [
+      "Gmail_ChangeEmailLabels",
+      "Gmail_TriageEmails"
+     ]
+    },
+    {
+     "noun": "advance",
+     "shared_by": [
+      "Gmail_ChangeEmailLabels",
+      "Gmail_TriageEmails"
+     ]
+    },
+    {
+     "noun": "affect",
+     "shared_by": [
+      "Gmail_SearchEmailsByQuery",
+      "Gmail_SetThreadTrashStatus"
+     ]
+    },
+    {
+     "noun": "after",
+     "shared_by": [
+      "Gmail_ChangeThreadLabels",
+      "Gmail_UnsubscribeFromEmail"
+     ]
+    }
+   ]
+  },
+  {
+   "server": "onesignal/onesignal",
+   "tools": 34,
+   "domain": [],
+   "tightest": [
+    {
+     "noun": "account",
+     "shared_by": [
+      "export_audience_activity_csv",
+      "export_subscriptions_csv"
+     ]
+    },
+    {
+     "noun": "address",
+     "shared_by": [
+      "create_subscription",
+      "unsubscribe_email"
+     ]
+    },
+    {
+     "noun": "alias_label",
+     "shared_by": [
+      "get_user_identity",
+      "view_user"
+     ]
+    },
+    {
+     "noun": "allow",
+     "shared_by": [
+      "export_audience_activity_csv",
+      "export_subscriptions_csv"
+     ]
+    },
+    {
+     "noun": "attach",
+     "shared_by": [
+      "create_subscription",
+      "create_user"
+     ]
+    }
+   ]
+  },
+  {
+   "server": "theagenttimes/news",
+   "tools": 18,
+   "domain": [],
+   "tightest": [
+    {
+     "noun": "ask",
+     "shared_by": [
+      "tat_ask",
+      "tat_post_comment"
+     ]
+    },
+    {
+     "noun": "backend",
+     "shared_by": [
+      "tat_search",
+      "tat_ask"
+     ]
+    },
+    {
+     "noun": "body",
+     "shared_by": [
+      "get_article",
+      "search_articles"
+     ]
+    },
+    {
+     "noun": "comment",
+     "shared_by": [
+      "tat_get_comments",
+      "tat_post_comment"
+     ]
+    },
+    {
+     "noun": "count",
+     "shared_by": [
+      "tat_stats",
+      "tat_get_comments"
+     ]
+    }
+   ]
+  },
+  {
+   "server": "subwayinfo",
+   "tools": 23,
+   "domain": [],
+   "tightest": [
+    {
+     "noun": "branch",
+     "shared_by": [
+      "rail_list_alerts",
+      "rail_search_stations"
+     ]
+    },
+    {
+     "noun": "central",
+     "shared_by": [
+      "rail_get_departures",
+      "transit_ask"
+     ]
+    },
+    {
+     "noun": "current",
+     "shared_by": [
+      "mta_get_line_status",
+      "mta_list_alerts"
+     ]
+    },
+    {
+     "noun": "dock",
+     "shared_by": [
+      "bike_get_station_status",
+      "bike_get_availability_summary"
+     ]
+    },
+    {
+     "noun": "grand",
+     "shared_by": [
+      "rail_get_departures",
+      "transit_ask"
+     ]
+    }
+   ]
+  },
+  {
+   "server": "googlesheets",
+   "tools": 13,
+   "domain": [],
+   "tightest": [
+    {
+     "noun": "account",
+     "shared_by": [
+      "Arcade_ListApps",
+      "GoogleSheets_CheckSpreadsheetAccess"
+     ]
+    },
+    {
+     "noun": "anchor",
+     "shared_by": [
+      "GoogleSheets_CommentOnSpreadsheet",
+      "GoogleSheets_ListSpreadsheetComments"
+     ]
+    },
+    {
+     "noun": "annotate",
+     "shared_by": [
+      "GoogleSheets_InspectSpreadsheet",
+      "GoogleSheets_ScanForDataIssues"
+     ]
+    },
+    {
+     "noun": "answer",
+     "shared_by": [
+      "Arcade_ListApps",
+      "GoogleSheets_GetSpreadsheetEditHistory"
+     ]
+    },
+    {
+     "noun": "api",
+     "shared_by": [
+      "GoogleSheets_CommentOnSpreadsheet",
+      "GoogleSheets_ListSpreadsheetComments"
+     ]
+    }
+   ]
+  },
+  {
+   "server": "github",
+   "tools": 86,
+   "domain": [],
+   "tightest": [
+    {
+     "noun": "account",
+     "shared_by": [
+      "create_repository",
+      "fork_repository"
+     ]
+    },
+    {
+     "noun": "always",
+     "shared_by": [
+      "get_notification_details",
+      "list_notifications"
+     ]
+    },
+    {
+     "noun": "artifact",
+     "shared_by": [
+      "actions_get",
+      "actions_list"
+     ]
+    },
+    {
+     "noun": "assign",
+     "shared_by": [
+      "assign_copilot_to_issue",
+      "list_notifications"
+     ]
+    },
+    {
+     "noun": "author",
+     "shared_by": [
+      "list_pull_requests",
+      "triage_issue"
+     ]
+    }
+   ]
+  },
+  {
+   "server": "pubmed",
+   "tools": 7,
+   "domain": [
+    "about",
+    "access",
+    "acm",
+    "acs",
+    "anatomy",
+    "arxiv",
+    "ask",
+    "astrophysics"
+   ],
+   "tightest": [
+    {
+     "noun": "always",
+     "shared_by": [
+      "get_article_metadata",
+      "get_full_text_article"
+     ]
+    },
+    {
+     "noun": "attribute",
+     "shared_by": [
+      "get_article_metadata",
+      "get_full_text_article"
+     ]
+    },
+    {
+     "noun": "cite",
+     "shared_by": [
+      "get_article_metadata",
+      "get_full_text_article"
+     ]
+    },
+    {
+     "noun": "decline",
+     "shared_by": [
+      "get_article_metadata",
+      "get_full_text_article"
+     ]
+    },
+    {
+     "noun": "detail",
+     "shared_by": [
+      "get_article_metadata",
+      "lookup_article_by_citation"
+     ]
+    }
+   ]
+  },
+  {
+   "server": "googlecalendar",
+   "tools": 9,
+   "domain": [],
+   "tightest": [
+    {
+     "noun": "access",
+     "shared_by": [
+      "GoogleCalendar_ListCalendars",
+      "GoogleCalendar_WhoAmI"
+     ]
+    },
+    {
+     "noun": "authent",
+     "shared_by": [
+      "GoogleCalendar_RespondToEvent",
+      "GoogleCalendar_WhoAmI"
+     ]
+    },
+    {
+     "noun": "detail",
+     "shared_by": [
+      "GoogleCalendar_UpdateEvent",
+      "GoogleCalendar_WhoAmI"
+     ]
+    },
+    {
+     "noun": "given",
+     "shared_by": [
+      "GoogleCalendar_FindTimeSlotsWhenEveryoneIsFree",
+      "GoogleCalendar_ListEvents"
+     ]
+    },
+    {
+     "noun": "googl",
+     "shared_by": [
+      "GoogleCalendar_DeleteEvent",
+      "GoogleCalendar_WhoAmI"
+     ]
+    }
+   ]
+  },
+  {
+   "server": "googledrive",
+   "tools": 18,
+   "domain": [],
+   "tightest": [
+    {
+     "noun": "across",
+     "shared_by": [
+      "GoogleDrive_ListFilePermissions",
+      "GoogleDrive_SearchDrive"
+     ]
+    },
+    {
+     "noun": "after",
+     "shared_by": [
+      "GoogleDrive_GenerateGoogleFilePickerUrl",
+      "GoogleDrive_SetGeneralAccess"
+     ]
+    },
+    {
+     "noun": "already",
+     "shared_by": [
+      "GoogleDrive_CheckFileAccess",
+      "GoogleDrive_ShareFile"
+     ]
+    },
+    {
+     "noun": "always",
+     "shared_by": [
+      "GoogleDrive_ListFilePermissions",
+      "GoogleDrive_RemoveAllCollaborators"
+     ]
+    },
+    {
+     "noun": "ambigu",
+     "shared_by": [
+      "GoogleDrive_RemoveAllCollaborators",
+      "GoogleDrive_RevokeFileAccess"
+     ]
+    }
+   ]
+  },
+  {
+   "server": "aiwyn",
+   "tools": 10,
+   "domain": [],
+   "tightest": [
+    {
+     "noun": "always",
+     "shared_by": [
+      "calculate_tax",
+      "tax_namespaces"
+     ]
+    },
+    {
+     "noun": "ca_form540",
+     "shared_by": [
+      "tax_namespace_schema",
+      "tax_namespaces"
+     ]
+    },
+    {
+     "noun": "ca_irsw2_g",
+     "shared_by": [
+      "calculate_tax",
+      "tax_namespaces"
+     ]
+    },
+    {
+     "noun": "ca_provider",
+     "shared_by": [
+      "calculate_tax",
+      "tax_namespaces"
+     ]
+    },
+    {
+     "noun": "calcul",
+     "shared_by": [
+      "check_tax",
+      "calculate_tax"
+     ]
+    }
+   ]
+  },
+  {
+   "server": "slack",
+   "tools": 11,
+   "domain": [],
+   "tightest": [
+    {
+     "noun": "absolute",
+     "shared_by": [
+      "Slack_GetMessages",
+      "Slack_GetThreadMessages"
+     ]
+    },
+    {
+     "noun": "accept",
+     "shared_by": [
+      "Slack_GetUsersInfo",
+      "Slack_ListUsers"
+     ]
+    },
+    {
+     "noun": "argument",
+     "shared_by": [
+      "Slack_GetMessages",
+      "Slack_GetThreadMessages"
+     ]
+    },
+    {
+     "noun": "authent",
+     "shared_by": [
+      "Slack_ListUsers",
+      "Slack_WhoAmI"
+     ]
+    },
+    {
+     "noun": "begin",
+     "shared_by": [
+      "Slack_GetMessages",
+      "Slack_GetThreadMessages"
+     ]
+    }
+   ]
+  },
+  {
+   "server": "bigquery",
+   "tools": 5,
+   "domain": [
+    "bigquery"
+   ],
+   "tightest": [
+    {
+     "noun": "about",
+     "shared_by": [
+      "get_dataset_info",
+      "get_table_info"
+     ]
+    },
+    {
+     "noun": "cloud",
+     "shared_by": [
+      "list_dataset_ids",
+      "execute_sql"
+     ]
+    },
+    {
+     "noun": "googl",
+     "shared_by": [
+      "list_dataset_ids",
+      "execute_sql"
+     ]
+    },
+    {
+     "noun": "ids",
+     "shared_by": [
+      "list_dataset_ids",
+      "list_table_ids"
+     ]
+    },
+    {
+     "noun": "metadata",
+     "shared_by": [
+      "get_dataset_info",
+      "get_table_info"
+     ]
+    }
+   ]
+  },
+  {
+   "server": "favcrm/favcrm",
+   "tools": 132,
+   "domain": [],
+   "tightest": [
+    {
+     "noun": "access",
+     "shared_by": [
+      "list_my_companies",
+      "switch_company"
+     ]
+    },
+    {
+     "noun": "already",
+     "shared_by": [
+      "create_post",
+      "update_post_type_field"
+     ]
+    },
+    {
+     "noun": "append",
+     "shared_by": [
+      "clone",
+      "append_post_block"
+     ]
+    },
+    {
+     "noun": "assign",
+     "shared_by": [
+      "assign_staff_to_service",
+      "create_task"
+     ]
+    },
+    {
+     "noun": "assignee",
+     "shared_by": [
+      "list_tasks",
+      "update_task"
+     ]
+    }
+   ]
+  },
+  {
+   "server": "adamamer20/paper-search-mcp-openai",
+   "tools": 25,
+   "domain": [],
+   "tightest": [
+    {
+     "noun": "abs",
+     "shared_by": [
+      "download_semantic",
+      "read_semantic_paper"
+     ]
+    },
+    {
+     "noun": "access",
+     "shared_by": [
+      "download_crossref",
+      "read_crossref_paper"
+     ]
+    },
+    {
+     "noun": "acl",
+     "shared_by": [
+      "download_semantic",
+      "read_semantic_paper"
+     ]
+    },
+    {
+     "noun": "deep",
+     "shared_by": [
+      "search",
+      "search_crossref"
+     ]
+    },
+    {
+     "noun": "def34f8be52c8b66281af98ae884c09aef38b",
+     "shared_by": [
+      "download_semantic",
+      "read_semantic_paper"
+     ]
+    }
+   ]
+  },
+  {
+   "server": "jordan-s648/PolymarketScan",
+   "tools": 8,
+   "domain": [],
+   "tightest": [
+    {
+     "noun": "activ",
+     "shared_by": [
+      "get_whale_trades",
+      "search_markets"
+     ]
+    },
+    {
+     "noun": "pnl",
+     "shared_by": [
+      "get_trader_profile",
+      "get_leaderboard"
+     ]
+    },
+    {
+     "noun": "price",
+     "shared_by": [
+      "get_market_odds",
+      "get_market_movers"
+     ]
+    },
+    {
+     "noun": "query",
+     "shared_by": [
+      "search_markets",
+      "get_site_stats"
+     ]
+    },
+    {
+     "noun": "rank",
+     "shared_by": [
+      "get_trader_profile",
+      "get_leaderboard"
+     ]
+    }
+   ]
+  },
+  {
+   "server": "bouch/uk-due-diligence",
+   "tools": 16,
+   "domain": [],
+   "tightest": [
+    {
+     "noun": "act",
+     "shared_by": [
+      "disqualified_search",
+      "disqualified_profile"
+     ]
+    },
+    {
+     "noun": "appointed",
+     "shared_by": [
+      "company_officers",
+      "gazette_insolvency"
+     ]
+    },
+    {
+     "noun": "argument",
+     "shared_by": [
+      "list_prompts",
+      "get_prompt"
+     ]
+    },
+    {
+     "noun": "corporate",
+     "shared_by": [
+      "company_psc",
+      "gazette_insolvency"
+     ]
+    },
+    {
+     "noun": "cover",
+     "shared_by": [
+      "land_title_search",
+      "gazette_insolvency"
+     ]
+    }
+   ]
+  },
+  {
+   "server": "oobe-protocol/sap-mcp",
+   "tools": 275,
+   "domain": [],
+   "tightest": [
+    {
+     "noun": "accept",
+     "shared_by": [
+      "spl-token_getBalance",
+      "spl-token_getTokenAccounts"
+     ]
+    },
+    {
+     "noun": "actual",
+     "shared_by": [
+      "sap_publish_tool_by_name",
+      "sap_update_tool"
+     ]
+    },
+    {
+     "noun": "agentaccount",
+     "shared_by": [
+      "sap_discover_agents",
+      "sap_list_all_agents"
+     ]
+    },
+    {
+     "noun": "agentmodule",
+     "shared_by": [
+      "sap_update_agent",
+      "sap_get_global_state"
+     ]
+    },
+    {
+     "noun": "aliased",
+     "shared_by": [
+      "spl-token_getBalance",
+      "spl-token_getTokenAccounts"
+     ]
+    }
+   ]
+  },
+  {
+   "server": "isdaniel/mcp_weather_server",
+   "tools": 8,
+   "domain": [],
+   "tightest": [
+    {
+     "noun": "air",
+     "shared_by": [
+      "get_air_quality",
+      "get_air_quality_details"
+     ]
+    },
+    {
+     "noun": "analysis",
+     "shared_by": [
+      "get_weather_details",
+      "get_air_quality_details"
+     ]
+    },
+    {
+     "noun": "data",
+     "shared_by": [
+      "get_weather_details",
+      "get_air_quality_details"
+     ]
+    },
+    {
+     "noun": "detail",
+     "shared_by": [
+      "get_weather_details",
+      "get_air_quality_details"
+     ]
+    },
+    {
+     "noun": "include",
+     "shared_by": [
+      "get_timezone_info",
+      "get_air_quality"
+     ]
+    }
+   ]
+  },
+  {
+   "server": "emblemai/emblem-mcp",
+   "tools": 133,
+   "domain": [],
+   "tightest": [
+    {
+     "noun": "array",
+     "shared_by": [
+      "getInscriptionTraits",
+      "rareSatsForUTXO"
+     ]
+    },
+    {
+     "noun": "best",
+     "shared_by": [
+      "openseaGetBestListings",
+      "solanaGetTokenPairPrice"
+     ]
+    },
+    {
+     "noun": "between",
+     "shared_by": [
+      "getCoinglassPremiumIndex",
+      "solanaGetTokenPairPrice"
+     ]
+    },
+    {
+     "noun": "bond",
+     "shared_by": [
+      "isFourMemeToken",
+      "hederaFindMemeCoins"
+     ]
+    },
+    {
+     "noun": "buy",
+     "shared_by": [
+      "baseFindClankerTokens",
+      "openseaGetNFTOffers"
+     ]
+    }
+   ]
+  },
+  {
+   "server": "naver/search",
+   "tools": 12,
+   "domain": [
+    "search"
+   ],
+   "tightest": [
+    {
+     "noun": "across",
+     "shared_by": [
+      "search_web",
+      "search_images"
+     ]
+    },
+    {
+     "noun": "catalog",
+     "shared_by": [
+      "search_books",
+      "search_shopping"
+     ]
+    },
+    {
+     "noun": "commun",
+     "shared_by": [
+      "search_cafe_articles",
+      "search_knowledge_in"
+     ]
+    },
+    {
+     "noun": "date",
+     "shared_by": [
+      "search_news",
+      "search_blogs"
+     ]
+    },
+    {
+     "noun": "keyword",
+     "shared_by": [
+      "search_news",
+      "search_blogs"
+     ]
+    }
+   ]
+  },
+  {
+   "server": "friso/compliancecheckup",
+   "tools": 5,
+   "domain": [],
+   "tightest": [
+    {
+     "noun": "compliance",
+     "shared_by": [
+      "get_compliance_info",
+      "get_checklist"
+     ]
+    },
+    {
+     "noun": "compliancecheckup",
+     "shared_by": [
+      "lookup_tool",
+      "list_tools"
+     ]
+    },
+    {
+     "noun": "hipaa",
+     "shared_by": [
+      "get_compliance_info",
+      "get_checklist"
+     ]
+    },
+    {
+     "noun": "slug",
+     "shared_by": [
+      "get_privacy_grade",
+      "lookup_tool"
+     ]
+    },
+    {
+     "noun": "directory",
+     "shared_by": [
+      "get_privacy_grade",
+      "lookup_tool",
+      "list_tools"
+     ]
+    }
+   ]
+  },
+  {
+   "server": "segellfosc-dev-ayfx/menjometre",
+   "tools": 48,
+   "domain": [],
+   "tightest": [
+    {
+     "noun": "accept",
+     "shared_by": [
+      "list_filter_options",
+      "get_entity"
+     ]
+    },
+    {
+     "noun": "accumulate",
+     "shared_by": [
+      "get_politician",
+      "get_party"
+     ]
+    },
+    {
+     "noun": "aggregate",
+     "shared_by": [
+      "get_entity_risk_analysis",
+      "get_party"
+     ]
+    },
+    {
+     "noun": "available",
+     "shared_by": [
+      "get_pressupostos_hub",
+      "get_efficiency_analysis"
+     ]
+    },
+    {
+     "noun": "award",
+     "shared_by": [
+      "get_entity_grants",
+      "get_entity_contracts"
+     ]
+    }
+   ]
+  },
+  {
+   "server": "entia/entity-verification",
+   "tools": 12,
+   "domain": [],
+   "tightest": [
+    {
+     "noun": "abogados",
+     "shared_by": [
+      "search_entities",
+      "get_competitors"
+     ]
+    },
+    {
+     "noun": "across",
+     "shared_by": [
+      "search_entities",
+      "professional_lookup"
+     ]
+    },
+    {
+     "noun": "aliased",
+     "shared_by": [
+      "search_entities",
+      "get_competitors"
+     ]
+    },
+    {
+     "noun": "authent",
+     "shared_by": [
+      "entity_lookup",
+      "search_entities"
+     ]
+    },
+    {
+     "noun": "busy",
+     "shared_by": [
+      "entity_lookup",
+      "zone_profile"
+     ]
+    }
+   ]
+  },
+  {
+   "server": "TitanSneaker/paper-search-mcp-openai-v2",
+   "tools": 25,
+   "domain": [],
+   "tightest": [
+    {
+     "noun": "abs",
+     "shared_by": [
+      "download_semantic",
+      "read_semantic_paper"
+     ]
+    },
+    {
+     "noun": "access",
+     "shared_by": [
+      "download_crossref",
+      "read_crossref_paper"
+     ]
+    },
+    {
+     "noun": "acl",
+     "shared_by": [
+      "download_semantic",
+      "read_semantic_paper"
+     ]
+    },
+    {
+     "noun": "deep",
+     "shared_by": [
+      "search",
+      "search_crossref"
+     ]
+    },
+    {
+     "noun": "def34f8be52c8b66281af98ae884c09aef38b",
+     "shared_by": [
+      "download_semantic",
+      "read_semantic_paper"
+     ]
+    }
+   ]
+  }
+ ],
+ "restates_name": [
+  {
+   "server": "gmail",
+   "tool": "Gmail_ReplyToEmail",
+   "param": "reply_to_message_id",
+   "description": "The ID of the message to reply to"
+  },
+  {
+   "server": "onesignal/onesignal",
+   "tool": "create_or_update_alias",
+   "param": "alias_id",
+   "description": "Alias ID value."
+  },
+  {
+   "server": "onesignal/onesignal",
+   "tool": "create_subscription",
+   "param": "alias_id",
+   "description": "Alias ID value."
+  },
+  {
+   "server": "onesignal/onesignal",
+   "tool": "get_user_identity",
+   "param": "alias_id",
+   "description": "Alias ID value."
+  },
+  {
+   "server": "onesignal/onesignal",
+   "tool": "get_user_identity_by_subscription",
+   "param": "subscription_id",
+   "description": "Subscription ID."
+  },
+  {
+   "server": "onesignal/onesignal",
+   "tool": "update_user",
+   "param": "alias_id",
+   "description": "Alias ID value."
+  },
+  {
+   "server": "onesignal/onesignal",
+   "tool": "view_user",
+   "param": "alias_id",
+   "description": "Alias ID value."
+  },
+  {
+   "server": "theagenttimes/news",
+   "tool": "tat_recommend",
+   "param": "constraints",
+   "description": "Optional constraints"
+  },
+  {
+   "server": "theagenttimes/news",
+   "tool": "tat_get_comments",
+   "param": "article_slug",
+   "description": "Article slug"
+  },
+  {
+   "server": "theagenttimes/news",
+   "tool": "tat_post_comment",
+   "param": "agent_name",
+   "description": "Your agent name"
+  },
+  {
+   "server": "theagenttimes/news",
+   "tool": "tat_post_comment",
+   "param": "article_slug",
+   "description": "Article slug"
+  },
+  {
+   "server": "theagenttimes/news",
+   "tool": "report_usage",
+   "param": "output_url",
+   "description": "URL of your output (optional)"
+  },
+  {
+   "server": "googlesheets",
+   "tool": "GoogleSheets_ReplyToComment",
+   "param": "reply_text",
+   "description": "The text of the reply."
+  },
+  {
+   "server": "github",
+   "tool": "assign_copilot_to_issue",
+   "param": "issue_number",
+   "description": "Issue number"
+  },
+  {
+   "server": "github",
+   "tool": "get_code_scanning_alert",
+   "param": "alertNumber",
+   "description": "The number of the alert."
+  },
+  {
+   "server": "github",
+   "tool": "get_dependabot_alert",
+   "param": "alertNumber",
+   "description": "The number of the alert."
+  },
+  {
+   "server": "github",
+   "tool": "get_discussion",
+   "param": "discussionNumber",
+   "description": "Discussion Number"
+  },
+  {
+   "server": "github",
+   "tool": "get_discussion_comments",
+   "param": "discussionNumber",
+   "description": "Discussion Number"
+  },
+  {
+   "server": "github",
+   "tool": "get_gist",
+   "param": "gist_id",
+   "description": "The ID of the gist"
+  },
+  {
+   "server": "github",
+   "tool": "get_notification_details",
+   "param": "notificationID",
+   "description": "The ID of the notification"
+  },
+  {
+   "server": "github",
+   "tool": "get_secret_scanning_alert",
+   "param": "alertNumber",
+   "description": "The number of the alert."
+  },
+  {
+   "server": "github",
+   "tool": "get_team_members",
+   "param": "team_slug",
+   "description": "Team slug"
+  },
+  {
+   "server": "github",
+   "tool": "issue_read",
+   "param": "issue_number",
+   "description": "The number of the issue"
+  },
+  {
+   "server": "github",
+   "tool": "list_org_repository_security_advisories",
+   "param": "sort",
+   "description": "Sort field."
+  },
+  {
+   "server": "github",
+   "tool": "list_pull_requests",
+   "param": "sort",
+   "description": "Sort by"
+  }
+ ],
+ "nested_only": [
+  {
+   "server": "gmail",
+   "tool": "Gmail_SendEmail",
+   "top_level_params": 7,
+   "undescribed_below": [
+    "attachments[].source",
+    "attachments[].filename"
+   ]
+  },
+  {
+   "server": "gmail",
+   "tool": "Gmail_WriteDraftEmail",
+   "top_level_params": 7,
+   "undescribed_below": [
+    "attachments[].source",
+    "attachments[].filename"
+   ]
+  },
+  {
+   "server": "gmail",
+   "tool": "Gmail_WriteDraftReplyEmail",
+   "top_level_params": 7,
+   "undescribed_below": [
+    "attachments[].source",
+    "attachments[].filename"
+   ]
+  },
+  {
+   "server": "googlesheets",
+   "tool": "GoogleSheets_CreateOrEditSpreadsheet",
+   "top_level_params": 3,
+   "undescribed_below": [
+    "requests[].addChart",
+    "requests[].addChart.chart",
+    "requests[].addChart.chart.spec",
+    "requests[].addChart.chart.chartId",
+    "requests[].addChart.chart.position",
+    "requests[].addSheet",
+    "requests[].addSheet.properties",
+    "requests[].addSheet.properties.index"
+   ]
+  },
+  {
+   "server": "googlesheets",
+   "tool": "GoogleSheets_InspectSpreadsheet",
+   "top_level_params": 14,
+   "undescribed_below": [
+    "filter_conditions[].op",
+    "filter_conditions[].value",
+    "filter_conditions[].column"
+   ]
+  },
+  {
+   "server": "github",
+   "tool": "triage_issue",
+   "top_level_params": 7,
+   "undescribed_below": [
+    "fields[].name"
+   ]
+  },
+  {
+   "server": "favcrm/favcrm",
+   "tool": "create_post",
+   "top_level_params": 16,
+   "undescribed_below": [
+    "blocks[].id",
+    "blocks[].data",
+    "blocks[].data.html",
+    "blocks[].type",
+    "blocks[].version",
+    "blocks[].id",
+    "blocks[].data",
+    "blocks[].data.text"
+   ]
+  },
+  {
+   "server": "favcrm/favcrm",
+   "tool": "create_post_type_field",
+   "top_level_params": 9,
+   "undescribed_below": [
+    "fields[].sortOrder"
+   ]
+  },
+  {
+   "server": "favcrm/favcrm",
+   "tool": "create_segment",
+   "top_level_params": 4,
+   "undescribed_below": [
+    "criteria.conditions[].threshold"
+   ]
+  },
+  {
+   "server": "favcrm/favcrm",
+   "tool": "create_offer_rule",
+   "top_level_params": 6,
+   "undescribed_below": [
+    "products[].discountType",
+    "products[].discountValue"
+   ]
+  },
+  {
+   "server": "ia-qa/api",
+   "tool": "generate_json_ld",
+   "top_level_params": 3,
+   "undescribed_below": [
+    "faq_items[].answer",
+    "faq_items[].question"
+   ]
+  },
+  {
+   "server": "ia-qa/api",
+   "tool": "embedding_similarity",
+   "top_level_params": 4,
+   "undescribed_below": [
+    "batch[].text_a",
+    "batch[].text_b"
+   ]
+  },
+  {
+   "server": "ia-qa/api",
+   "tool": "guardrail_test",
+   "top_level_params": 2,
+   "undescribed_below": [
+    "rules[].type"
+   ]
+  },
+  {
+   "server": "ia-qa/api",
+   "tool": "function_call_validate",
+   "top_level_params": 2,
+   "undescribed_below": [
+    "allowed_functions[].name",
+    "allowed_functions[].optional_args",
+    "allowed_functions[].required_args"
+   ]
+  },
+  {
+   "server": "ia-qa/api",
+   "tool": "conversation_analyze",
+   "top_level_params": 1,
+   "undescribed_below": [
+    "messages[].role",
+    "messages[].content"
+   ]
+  },
+  {
+   "server": "ia-qa/api",
+   "tool": "context_window_check",
+   "top_level_params": 3,
+   "undescribed_below": [
+    "messages[].role",
+    "messages[].content"
+   ]
+  },
+  {
+   "server": "ia-qa/api",
+   "tool": "build_rag_prompt",
+   "top_level_params": 6,
+   "undescribed_below": [
+    "chunks[].text",
+    "chunks[].score",
+    "chunks[].source"
+   ]
+  },
+  {
+   "server": "ia-qa/api",
+   "tool": "few_shot_formatter",
+   "top_level_params": 4,
+   "undescribed_below": [
+    "examples[].input",
+    "examples[].label",
+    "examples[].output"
+   ]
+  },
+  {
+   "server": "ia-qa/api",
+   "tool": "levenshtein_distance",
+   "top_level_params": 4,
+   "undescribed_below": [
+    "batch[].a",
+    "batch[].b"
+   ]
+  },
+  {
+   "server": "ia-qa/api",
+   "tool": "rerank_evaluate",
+   "top_level_params": 4,
+   "undescribed_below": [
+    "passages[].id",
+    "passages[].text"
+   ]
+  },
+  {
+   "server": "ia-qa/api",
+   "tool": "shield_analyze",
+   "top_level_params": 5,
+   "undescribed_below": [
+    "rules[].type",
+    "rules[].label",
+    "rules[].value"
+   ]
+  },
+  {
+   "server": "ia-qa/api",
+   "tool": "similarity_score",
+   "top_level_params": 5,
+   "undescribed_below": [
+    "batch[].reference",
+    "batch[].hypothesis"
+   ]
+  },
+  {
+   "server": "ia-qa/api",
+   "tool": "optimize_prompt_tokens",
+   "top_level_params": 2,
+   "undescribed_below": [
+    "options.fillers",
+    "options.duplicates",
+    "options.whitespace",
+    "options.instructions"
+   ]
+  },
+  {
+   "server": "ia-qa/api",
+   "tool": "run_eval_contract",
+   "top_level_params": 4,
+   "undescribed_below": [
+    "api_keys.hf",
+    "api_keys.groq",
+    "api_keys.google",
+    "api_keys.openai",
+    "api_keys.anthropic",
+    "overrides.model",
+    "overrides.provider",
+    "overrides.temperature"
+   ]
+  },
+  {
+   "server": "ia-qa/api",
+   "tool": "multimodal_eval_guide",
+   "top_level_params": 16,
+   "undescribed_below": [
+    "test_cases[].question",
+    "test_cases[].accepted_answers"
+   ]
+  }
+ ],
  "zero_distinctive": [
   {
    "server": "gmail",
    "tool": "Gmail_DeleteDraftEmail",
    "tokens": 5,
    "description": "Delete a draft email using the Gmail API."
+  },
+  {
+   "server": "gmail",
+   "tool": "Gmail_DeleteLabel",
+   "tokens": 19,
+   "description": "Delete a user-created label, resolving it by the name the user says.\n\nA misspelled name gets a close-match suggestion; a system label is rejected. Deleting a\nlabel removes it from the mailbox and from"
+  },
+  {
+   "server": "gmail",
+   "tool": "Gmail_ListDraftEmails",
+   "tokens": 6,
+   "description": "Lists draft emails in the user's draft mailbox using the Gmail API."
+  },
+  {
+   "server": "gmail",
+   "tool": "Gmail_ListEmailsByHeader",
+   "tokens": 23,
+   "description": "Search for emails by header using the Gmail API.\n\nBy default returns metadata-only rows (no body/html_body). Pass include_body=True\nwhen full message text is needed. Metadata rows still include routin"
   },
   {
    "server": "gmail",
@@ -21,8 +1742,14 @@
   {
    "server": "gmail",
    "tool": "Gmail_ReplyToEmail",
-   "tokens": 34,
+   "tokens": 32,
    "description": "Send a reply to an email message, optionally with one or more file attachments.\n\nTo attach files, pass ``attachments`` and give each file's local path as a\n``file://`` URI in ``source`` (formatted ``f"
+  },
+  {
+   "server": "gmail",
+   "tool": "Gmail_ReportSpam",
+   "tokens": 8,
+   "description": "Report exactly one email as spam: move to Spam and remove from the inbox."
   },
   {
    "server": "gmail",
@@ -39,19 +1766,19 @@
   {
    "server": "gmail",
    "tool": "Gmail_SendEmail",
-   "tokens": 34,
+   "tokens": 32,
    "description": "Send an email using the Gmail API, optionally with one or more file attachments.\n\nTo attach files, pass ``attachments`` and give each file's local path as a\n``file://`` URI in ``source`` (formatted ``"
   },
   {
    "server": "gmail",
    "tool": "Gmail_WriteDraftEmail",
-   "tokens": 34,
+   "tokens": 32,
    "description": "Compose a new email draft using the Gmail API, optionally with file attachments.\n\nTo attach files, pass ``attachments`` and give each file's local path as a\n``file://`` URI in ``source`` (formatted ``"
   },
   {
    "server": "gmail",
    "tool": "Gmail_WriteDraftReplyEmail",
-   "tokens": 35,
+   "tokens": 33,
    "description": "Compose a draft reply to an email message, optionally with one or more file attachments.\n\nTo attach files, pass ``attachments`` and give each file's local path as a\n``file://`` URI in ``source`` (form"
   },
   {
@@ -81,13 +1808,13 @@
   {
    "server": "onesignal/onesignal",
    "tool": "export_audience_activity_csv",
-   "tokens": 14,
+   "tokens": 13,
    "description": "Export audience activity for a notification to CSV. WARNING: Only 1 concurrent export is allowed per account \u2014 if a 409 or 429 is returned, a previous export is still running."
   },
   {
    "server": "onesignal/onesignal",
    "tool": "export_subscriptions_csv",
-   "tokens": 14,
+   "tokens": 13,
    "description": "Export all subscriptions for a OneSignal app to CSV. WARNING: Only 1 concurrent export is allowed per account \u2014 if a 409 or 429 is returned, a previous export is still running."
   },
   {
@@ -110,6 +1837,12 @@
   },
   {
    "server": "onesignal/onesignal",
+   "tool": "list_templates",
+   "tokens": 7,
+   "description": "List notification templates for a OneSignal app. Maximum 50 per page."
+  },
+  {
+   "server": "onesignal/onesignal",
    "tool": "update_template",
    "tokens": 9,
    "description": "Update an existing notification template. The `name` field is required even if you are not changing it."
@@ -119,42 +1852,912 @@
    "tool": "view_message",
    "tokens": 3,
    "description": "Retrieve a single notification by ID."
+  }
+ ],
+ "both_low": [
+  {
+   "server": "gmail",
+   "tool": "Gmail_ChangeEmailLabels",
+   "description_share": 0.019,
+   "name_share": 0.0,
+   "description": "Add or remove one user-created label on at most 50 messages per call.\n\nA message already in the requested state is a noop, but the tool is not idempotent in que"
+  },
+  {
+   "server": "gmail",
+   "tool": "Gmail_DeleteDraftEmail",
+   "description_share": 0.0,
+   "name_share": 0.0,
+   "description": "Delete a draft email using the Gmail API."
+  },
+  {
+   "server": "gmail",
+   "tool": "Gmail_DeleteLabel",
+   "description_share": 0.0,
+   "name_share": 0.0,
+   "description": "Delete a user-created label, resolving it by the name the user says.\n\nA misspelled name gets a close-match suggestion; a system label is rejected. Deleting a\nla"
+  },
+  {
+   "server": "gmail",
+   "tool": "Gmail_GetEmail",
+   "description_share": 0.095,
+   "name_share": 0.0,
+   "description": "Read one message by ID without loading the rest of its thread.\n\nReturns parsed sender and recipient headers, the subject, text and HTML bodies,\nlabels, dates, a"
+  },
+  {
+   "server": "gmail",
+   "tool": "Gmail_ListDraftEmails",
+   "description_share": 0.0,
+   "name_share": 0.0,
+   "description": "Lists draft emails in the user's draft mailbox using the Gmail API."
+  },
+  {
+   "server": "gmail",
+   "tool": "Gmail_ListLabels",
+   "description_share": 0.0,
+   "name_share": 0.0,
+   "description": "List all the labels in the user's mailbox."
+  },
+  {
+   "server": "gmail",
+   "tool": "Gmail_ListThreads",
+   "description_share": 0.0,
+   "name_share": 0.0,
+   "description": "List threads in the user's mailbox.\n\nBy default, obvious automated threads are excluded from results using\nno-reply sender patterns and Gmail's non-primary cate"
+  },
+  {
+   "server": "gmail",
+   "tool": "Gmail_SearchThreads",
+   "description_share": 0.0,
+   "name_share": 0.0,
+   "description": "Search for threads in the user's mailbox."
+  },
+  {
+   "server": "gmail",
+   "tool": "Gmail_SendDraftEmail",
+   "description_share": 0.0,
+   "name_share": 0.0,
+   "description": "Send a draft email using the Gmail API."
+  },
+  {
+   "server": "gmail",
+   "tool": "Gmail_SendEmail",
+   "description_share": 0.0,
+   "name_share": 0.0,
+   "description": "Send an email using the Gmail API, optionally with one or more file attachments.\n\nTo attach files, pass ``attachments`` and give each file's local path as a\n``f"
+  },
+  {
+   "server": "gmail",
+   "tool": "Gmail_UpdateLabel",
+   "description_share": 0.091,
+   "name_share": 0.0,
+   "description": "Rename a user-created label, resolving it by the name the user says.\n\nThe label's color and visibility settings are preserved. A misspelled name gets a\nclose-ma"
+  },
+  {
+   "server": "gmail",
+   "tool": "Gmail_WriteDraftEmail",
+   "description_share": 0.0,
+   "name_share": 0.0,
+   "description": "Compose a new email draft using the Gmail API, optionally with file attachments.\n\nTo attach files, pass ``attachments`` and give each file's local path as a\n``f"
+  },
+  {
+   "server": "gmail",
+   "tool": "Gmail_WriteDraftReplyEmail",
+   "description_share": 0.0,
+   "name_share": 0.0,
+   "description": "Compose a draft reply to an email message, optionally with one or more file attachments.\n\nTo attach files, pass ``attachments`` and give each file's local path "
+  },
+  {
+   "server": "onesignal/onesignal",
+   "tool": "create_alias_by_subscription",
+   "description_share": 0.0,
+   "name_share": 0.0,
+   "description": "Create or update identity aliases for the user who owns a given subscription. The `onesignal_id` alias is read-only and must not be included."
+  },
+  {
+   "server": "onesignal/onesignal",
+   "tool": "create_segment",
+   "description_share": 0.0,
+   "name_share": 0.0,
+   "description": "Create a new audience segment with filter conditions. Maximum 200 filter entries."
+  },
+  {
+   "server": "onesignal/onesignal",
+   "tool": "create_template",
+   "description_share": 0.0,
+   "name_share": 0.0,
+   "description": "Create a new notification template for a OneSignal app."
+  },
+  {
+   "server": "onesignal/onesignal",
+   "tool": "export_subscriptions_csv",
+   "description_share": 0.0,
+   "name_share": 0.0,
+   "description": "Export all subscriptions for a OneSignal app to CSV. WARNING: Only 1 concurrent export is allowed per account \u2014 if a 409 or 429 is returned, a previous export i"
+  },
+  {
+   "server": "onesignal/onesignal",
+   "tool": "get_template",
+   "description_share": 0.0,
+   "name_share": 0.0,
+   "description": "Retrieve a single notification template by ID."
+  },
+  {
+   "server": "onesignal/onesignal",
+   "tool": "get_user_identity_by_subscription",
+   "description_share": 0.0,
+   "name_share": 0.0,
+   "description": "Retrieve the identity aliases for the user who owns a given subscription."
+  },
+  {
+   "server": "onesignal/onesignal",
+   "tool": "list_segments",
+   "description_share": 0.0,
+   "name_share": 0.0,
+   "description": "List audience segments for a OneSignal app. Maximum 300 segments per page."
+  },
+  {
+   "server": "onesignal/onesignal",
+   "tool": "list_templates",
+   "description_share": 0.0,
+   "name_share": 0.0,
+   "description": "List notification templates for a OneSignal app. Maximum 50 per page."
+  },
+  {
+   "server": "onesignal/onesignal",
+   "tool": "update_template",
+   "description_share": 0.0,
+   "name_share": 0.0,
+   "description": "Update an existing notification template. The `name` field is required even if you are not changing it."
+  },
+  {
+   "server": "onesignal/onesignal",
+   "tool": "view_message",
+   "description_share": 0.0,
+   "name_share": 0.0,
+   "description": "Retrieve a single notification by ID."
   },
   {
    "server": "subwayinfo",
    "tool": "mta_get_arrivals",
-   "tokens": 9,
+   "description_share": 0.0,
+   "name_share": 0.0,
    "description": "Get upcoming train arrivals at a station. Accepts station ID or name (e.g., \"127\", \"Times Square\", \"14th Street\")."
   },
   {
    "server": "subwayinfo",
    "tool": "mta_search_stations",
-   "tokens": 4,
+   "description_share": 0.0,
+   "name_share": 0.0,
    "description": "Search for stations by name or line"
+  }
+ ],
+ "output_near_miss": [
+  {
+   "server": "gmail",
+   "a": "Gmail_DeleteDraftEmail",
+   "b": "Gmail_SendDraftEmail",
+   "input_overlap": 1.0,
+   "shared_inputs": [
+    "api",
+    "draft",
+    "email",
+    "gmail",
+    "identifi"
+   ],
+   "a_output": [
+    "result"
+   ],
+   "b_output": [
+    "identifi",
+    "ids",
+    "label",
+    "thread",
+    "url"
+   ]
   },
   {
-   "server": "subwayinfo",
-   "tool": "mta_get_station_info",
-   "tokens": 7,
-   "description": "Get detailed information about a specific station. Accepts station ID or name."
+   "server": "gmail",
+   "a": "Gmail_ReplyToEmail",
+   "b": "Gmail_WriteDraftEmail",
+   "input_overlap": 0.683,
+   "shared_inputs": [
+    "absolute",
+    "attach",
+    "bcc",
+    "before",
+    "body",
+    "byte",
+    "cc",
+    "client",
+    "content",
+    "converse"
+   ],
+   "a_output": [
+    "each",
+    "file",
+    "identifi",
+    "ids",
+    "label",
+    "local",
+    "path",
+    "thread"
+   ],
+   "b_output": [
+    "draft",
+    "each",
+    "email",
+    "file",
+    "identifi",
+    "local",
+    "message",
+    "mime"
+   ]
   },
   {
-   "server": "subwayinfo",
-   "tool": "bus_list_alerts",
-   "tokens": 8,
-   "description": "Get active bus service alerts. Optionally filter by route or severity."
+   "server": "gmail",
+   "a": "Gmail_ReplyToEmail",
+   "b": "Gmail_WriteDraftReplyEmail",
+   "input_overlap": 0.972,
+   "shared_inputs": [
+    "absolute",
+    "attach",
+    "bcc",
+    "before",
+    "body",
+    "byte",
+    "cc",
+    "client",
+    "content",
+    "converse"
+   ],
+   "a_output": [
+    "each",
+    "file",
+    "identifi",
+    "ids",
+    "label",
+    "local",
+    "path",
+    "thread"
+   ],
+   "b_output": [
+    "draft",
+    "each",
+    "email",
+    "file",
+    "identifi",
+    "local",
+    "message",
+    "mime"
+   ]
   },
   {
-   "server": "subwayinfo",
-   "tool": "bus_get_arrivals",
-   "tokens": 6,
-   "description": "Get upcoming bus arrivals at a stop. Accepts stop ID or name (e.g., \"402940\", \"5 Av/W 42 St\")."
+   "server": "gmail",
+   "a": "Gmail_SendEmail",
+   "b": "Gmail_WriteDraftEmail",
+   "input_overlap": 0.889,
+   "shared_inputs": [
+    "absolute",
+    "api",
+    "attach",
+    "bcc",
+    "before",
+    "body",
+    "byte",
+    "cc",
+    "client",
+    "content"
+   ],
+   "a_output": [
+    "each",
+    "file",
+    "identifi",
+    "ids",
+    "label",
+    "local",
+    "path",
+    "thread"
+   ],
+   "b_output": [
+    "draft",
+    "each",
+    "email",
+    "file",
+    "identifi",
+    "local",
+    "message",
+    "mime"
+   ]
+  },
+  {
+   "server": "gmail",
+   "a": "Gmail_SendEmail",
+   "b": "Gmail_WriteDraftReplyEmail",
+   "input_overlap": 0.75,
+   "shared_inputs": [
+    "absolute",
+    "attach",
+    "bcc",
+    "before",
+    "body",
+    "byte",
+    "cc",
+    "client",
+    "content",
+    "converse"
+   ],
+   "a_output": [
+    "each",
+    "file",
+    "identifi",
+    "ids",
+    "label",
+    "local",
+    "path",
+    "thread"
+   ],
+   "b_output": [
+    "draft",
+    "each",
+    "email",
+    "file",
+    "identifi",
+    "local",
+    "message",
+    "mime"
+   ]
+  },
+  {
+   "server": "bigquery",
+   "a": "list_dataset_ids",
+   "b": "list_table_ids",
+   "input_overlap": 0.571,
+   "shared_inputs": [
+    "dataset",
+    "identifi",
+    "ids",
+    "project"
+   ],
+   "a_output": [
+    "dataset"
+   ],
+   "b_output": [
+    "table"
+   ]
+  },
+  {
+   "server": "bigquery",
+   "a": "get_dataset_info",
+   "b": "list_table_ids",
+   "input_overlap": 0.571,
+   "shared_inputs": [
+    "bigquery",
+    "dataset",
+    "identifi",
+    "project"
+   ],
+   "a_output": [
+    "access",
+    "bill",
+    "case",
+    "catalog",
+    "collat",
+    "configur",
+    "creation",
+    "dataset"
+   ],
+   "b_output": [
+    "table"
+   ]
+  },
+  {
+   "server": "bigquery",
+   "a": "get_dataset_info",
+   "b": "get_table_info",
+   "input_overlap": 0.857,
+   "shared_inputs": [
+    "about",
+    "bigquery",
+    "dataset",
+    "identifi",
+    "inform",
+    "project"
+   ],
+   "a_output": [
+    "access",
+    "bill",
+    "case",
+    "catalog",
+    "collat",
+    "configur",
+    "creation",
+    "dataset"
+   ],
+   "b_output": [
+    "activ",
+    "biglak",
+    "buffer",
+    "byte",
+    "catalog",
+    "clone",
+    "cluster",
+    "collat"
+   ]
+  },
+  {
+   "server": "bigquery",
+   "a": "list_table_ids",
+   "b": "get_table_info",
+   "input_overlap": 0.5,
+   "shared_inputs": [
+    "bigquery",
+    "dataset",
+    "identifi",
+    "project"
+   ],
+   "a_output": [
+    "table"
+   ],
+   "b_output": [
+    "activ",
+    "biglak",
+    "buffer",
+    "byte",
+    "catalog",
+    "clone",
+    "cluster",
+    "collat"
+   ]
+  },
+  {
+   "server": "naver/search",
+   "a": "search_news",
+   "b": "search_blogs",
+   "input_overlap": 0.75,
+   "shared_inputs": [
+    "display",
+    "keyword",
+    "naver",
+    "query",
+    "sort",
+    "start"
+   ],
+   "a_output": [
+    "article",
+    "date",
+    "link",
+    "origin",
+    "public",
+    "publish",
+    "title"
+   ],
+   "b_output": [
+    "blogger",
+    "date",
+    "link",
+    "name",
+    "post",
+    "title"
+   ]
+  },
+  {
+   "server": "smithery-ai/national-weather-service",
+   "a": "get_weather_forecast",
+   "b": "get_hourly_forecast",
+   "input_overlap": 0.571,
+   "shared_inputs": [
+    "forecast",
+    "locate",
+    "perfect",
+    "question",
+    "state",
+    "unit",
+    "weather",
+    "what"
+   ],
+   "a_output": [
+    "dai",
+    "day",
+    "detail",
+    "forecast",
+    "night"
+   ],
+   "b_output": [
+    "condition",
+    "detail",
+    "hour",
+    "hourly"
+   ]
+  },
+  {
+   "server": "boar-network/blockchain-basic",
+   "a": "eth_get_transaction",
+   "b": "eth_get_transaction_receipt",
+   "input_overlap": 0.6,
+   "shared_inputs": [
+    "ethereum",
+    "hash",
+    "mainnet"
+   ],
+   "a_output": [
+    "data",
+    "full",
+    "include",
+    "input",
+    "object",
+    "status",
+    "transact",
+    "value"
+   ],
+   "b_output": [
+    "contract",
+    "contractaddress",
+    "deployer",
+    "event",
+    "fail",
+    "gasused",
+    "log",
+    "status"
+   ]
+  },
+  {
+   "server": "boar-network/blockchain-basic",
+   "a": "mezo_get_transaction",
+   "b": "mezo_get_transaction_receipt",
+   "input_overlap": 0.5,
+   "shared_inputs": [
+    "hash",
+    "mezo"
+   ],
+   "a_output": [
+    "data",
+    "full",
+    "include",
+    "input",
+    "object",
+    "status",
+    "transact",
+    "value"
+   ],
+   "b_output": [
+    "contract",
+    "contractaddress",
+    "deployer",
+    "event",
+    "fail",
+    "gasused",
+    "log",
+    "status"
+   ]
+  },
+  {
+   "server": "boar-network/blockchain-basic",
+   "a": "btc_get_balance",
+   "b": "btc_get_history",
+   "input_overlap": 0.5,
+   "shared_inputs": [
+    "address",
+    "bitcoin",
+    "mainnet"
+   ],
+   "a_output": [
+    "balance",
+    "satoshi"
+   ],
+   "b_output": [
+    "hash",
+    "height",
+    "transact"
+   ]
+  },
+  {
+   "server": "boar-network/blockchain-basic",
+   "a": "btc_testnet_get_balance",
+   "b": "btc_testnet_get_history",
+   "input_overlap": 0.5,
+   "shared_inputs": [
+    "address",
+    "bitcoin",
+    "testnet3"
+   ],
+   "a_output": [
+    "balance",
+    "satoshi"
+   ],
+   "b_output": [
+    "hash",
+    "height",
+    "transact"
+   ]
+  },
+  {
+   "server": "vivaldoeuropes/vivaldo-product-discovery",
+   "a": "get_product_by_handle",
+   "b": "get_collection_products",
+   "input_overlap": 0.571,
+   "shared_inputs": [
+    "handle",
+    "product",
+    "shopify",
+    "vivaldo"
+   ],
+   "a_output": [
+    "available",
+    "description",
+    "handle",
+    "image",
+    "maximum",
+    "minimum",
+    "price",
+    "tag"
+   ],
+   "b_output": [
+    "collect",
+    "count",
+    "handle",
+    "product"
+   ]
+  },
+  {
+   "server": "iwantfyi/iwant",
+   "a": "demand.get_want",
+   "b": "demand.list_constraints",
+   "input_overlap": 0.667,
+   "shared_inputs": [
+    "demand",
+    "fyi",
+    "protocol",
+    "side"
+   ],
+   "a_output": [
+    "constraint",
+    "current",
+    "include",
+    "match",
+    "retrieve",
+    "want"
+   ],
+   "b_output": [
+    "constraint",
+    "extension",
+    "implement",
+    "include",
+    "kei",
+    "specific",
+    "support",
+    "vocabulary"
+   ]
+  },
+  {
+   "server": "iwantfyi/iwant",
+   "a": "demand.list_verticals",
+   "b": "demand.list_constraints",
+   "input_overlap": 0.571,
+   "shared_inputs": [
+    "demand",
+    "fyi",
+    "protocol",
+    "side"
+   ],
+   "a_output": [
+    "description",
+    "implement",
+    "kei",
+    "spec",
+    "support",
+    "vertical"
+   ],
+   "b_output": [
+    "constraint",
+    "extension",
+    "implement",
+    "include",
+    "kei",
+    "specific",
+    "support",
+    "vocabulary"
+   ]
+  },
+  {
+   "server": "delx/witness-protocol",
+   "a": "quick_session",
+   "b": "crisis_intervention",
+   "input_overlap": 0.562,
+   "shared_inputs": [
+    "agent",
+    "alias",
+    "free",
+    "identifi",
+    "name",
+    "path",
+    "public",
+    "session",
+    "sourc"
+   ],
+   "a_output": [
+    "call",
+    "capture",
+    "first",
+    "resume",
+    "session",
+    "single",
+    "start",
+    "state"
+   ],
+   "b_output": [
+    "first",
+    "ground",
+    "name",
+    "receive",
+    "recovery",
+    "resume",
+    "rupture",
+    "start"
+   ]
+  },
+  {
+   "server": "aparajithn/agent-utils",
+   "a": "tool_json_validate",
+   "b": "tool_json_format",
+   "input_overlap": 0.5,
+   "shared_inputs": [
+    "json",
+    "string"
+   ],
+   "a_output": [
+    "detail",
+    "error",
+    "object",
+    "parse",
+    "result"
+   ],
+   "b_output": [
+    "result"
+   ]
+  },
+  {
+   "server": "dev-7bd0/mcp-server",
+   "a": "nonprofit_fetch_nonprofit_by_ein",
+   "b": "nonprofit_search_nonprofits_by_name",
+   "input_overlap": 0.629,
+   "shared_inputs": [
+    "agent_gap",
+    "bmf",
+    "cach",
+    "call",
+    "code",
+    "day",
+    "doe",
+    "effect",
+    "ein",
+    "exact"
+   ],
+   "a_output": [
+    "dash",
+    "digit",
+    "employer",
+    "without"
+   ],
+   "b_output": [
+    "match"
+   ]
+  },
+  {
+   "server": "dev-7bd0/mcp-server",
+   "a": "security_fetch_dependency_graph",
+   "b": "security_fetch_package_licence",
+   "input_overlap": 0.584,
+   "shared_inputs": [
+    "agent_gap",
+    "cach",
+    "call",
+    "cargo",
+    "dep",
+    "depend",
+    "dev",
+    "doe",
+    "ecosystem",
+    "effect"
+   ],
+   "a_output": [
+    "partial",
+    "result"
+   ],
+   "b_output": [
+    "name",
+    "package"
+   ]
+  },
+  {
+   "server": "dev-7bd0/mcp-server",
+   "a": "compliance_fetch_npi_provider",
+   "b": "compliance_search_npi_by_name",
+   "input_overlap": 0.615,
+   "shared_inputs": [
+    "address",
+    "agent_gap",
+    "cach",
+    "call",
+    "cms",
+    "compliance_fetch_npi_provider",
+    "compliance_search_npi_by_name",
+    "digit",
+    "doe",
+    "effect"
+   ],
+   "a_output": [
+    "digit",
+    "npi",
+    "number"
+   ],
+   "b_output": [
+    "match"
+   ]
+  },
+  {
+   "server": "dev-7bd0/mcp-server",
+   "a": "compliance_fetch_npi_provider",
+   "b": "compliance_fetch_finra_broker",
+   "input_overlap": 0.5,
+   "shared_inputs": [
+    "agent_gap",
+    "cach",
+    "call",
+    "compliance_search_npi_by_name",
+    "doe",
+    "effect",
+    "feedback_type",
+    "gap_description",
+    "have",
+    "healthcare"
+   ],
+   "a_output": [
+    "digit",
+    "npi",
+    "number"
+   ],
+   "b_output": [
+    "central",
+    "depository",
+    "digit",
+    "number",
+    "registr",
+    "string"
+   ]
+  },
+  {
+   "server": "dev-7bd0/mcp-server",
+   "a": "regulatory_search_open_rulemakings",
+   "b": "regulatory_fetch_docket_details",
+   "input_overlap": 0.585,
+   "shared_inputs": [
+    "agence",
+    "agent_gap",
+    "cach",
+    "call",
+    "comment",
+    "count",
+    "detail",
+    "docket",
+    "document",
+    "doe"
+   ],
+   "a_output": [
+    "keyword",
+    "topic"
+   ],
+   "b_output": [
+    "agence",
+    "docket",
+    "format",
+    "identifi"
+   ]
   }
  ],
  "overlap": [
   {
    "server": "gmail",
-   "similarity": 0.965,
+   "similarity": 0.964,
    "a": {
     "name": "Gmail_ReplyToEmail",
     "description": "Send a reply to an email message, optionally with one or more file attachments.\n\nTo attach files, pass ``attachments`` and give each file's local path as a\n``file://`` URI in ``source`` (formatted ``f"
@@ -166,7 +2769,7 @@
   },
   {
    "server": "onesignal/onesignal",
-   "similarity": 0.858,
+   "similarity": 0.855,
    "a": {
     "name": "get_template",
     "description": "Retrieve a single notification template by ID."
@@ -178,31 +2781,43 @@
   },
   {
    "server": "github",
-   "similarity": 0.896,
+   "similarity": 0.943,
    "a": {
-    "name": "list_org_repository_security_advisories",
-    "description": "List repository security advisories for a GitHub organization."
+    "name": "get_dependabot_alert",
+    "description": "Get details of a specific dependabot alert in a GitHub repository."
    },
    "b": {
-    "name": "list_repository_security_advisories",
-    "description": "List repository security advisories for a GitHub repository."
+    "name": "list_dependabot_alerts",
+    "description": "List dependabot alerts in a GitHub repository."
    }
   },
   {
    "server": "pubmed",
    "similarity": 0.988,
    "a": {
-    "name": "find_related_articles",
-    "description": "Find related articles and resources in PubMed.\n\nIMPORTANT - PubMed Database Scope: This server provides access to PubMed, which ONLY indexes biomedical and life sciences literature including:\n- Medici"
+    "name": "search_articles",
+    "description": "Search PubMed for biomedical and life sciences research articles matching a given query.\n\nIMPORTANT - PubMed Database Scope: This server provides access to PubMed, which ONLY indexes biomedical and li"
    },
    "b": {
-    "name": "lookup_article_by_citation",
-    "description": "Lookup articles by citation details in PubMed.\n\nIMPORTANT - PubMed Database Scope: This server provides access to PubMed, which ONLY indexes biomedical and life sciences literature including:\n- Medici"
+    "name": "find_related_articles",
+    "description": "Find related articles and resources in PubMed.\n\nIMPORTANT - PubMed Database Scope: This server provides access to PubMed, which ONLY indexes biomedical and life sciences literature including:\n- Medici"
+   }
+  },
+  {
+   "server": "aiwyn",
+   "similarity": 0.804,
+   "a": {
+    "name": "tax_years",
+    "description": "List all supported tax years."
+   },
+   "b": {
+    "name": "tax_jurisdictions",
+    "description": "List all supported tax jurisdictions for a given tax year."
    }
   },
   {
    "server": "slack",
-   "similarity": 0.898,
+   "similarity": 0.903,
    "a": {
     "name": "Slack_GetMessages",
     "description": "Get messages in a Slack Channel, DM (direct message) or MPIM (multi-person) conversation.\n\nProvide exactly one of:\n- conversation_id; or\n- channel_name; or\n- any combination of user_ids, usernames, an"
@@ -214,7 +2829,7 @@
   },
   {
    "server": "bigquery",
-   "similarity": 0.82,
+   "similarity": 0.831,
    "a": {
     "name": "get_dataset_info",
     "description": "Get metadata information about a BigQuery dataset."
@@ -226,7 +2841,7 @@
   },
   {
    "server": "favcrm/favcrm",
-   "similarity": 0.949,
+   "similarity": 0.944,
    "a": {
     "name": "send_whatsapp_message",
     "description": "Disabled for agents. Use request_send_approval so the merchant can approve the exact WhatsApp draft in Workroom."
@@ -238,7 +2853,7 @@
   },
   {
    "server": "adamamer20/paper-search-mcp-openai",
-   "similarity": 0.927,
+   "similarity": 0.945,
    "a": {
     "name": "download_semantic",
     "description": "Download PDF of a Semantic Scholar paper.    \n\n    Args:\n        paper_id: Semantic Scholar paper ID, Paper identifier in one of the following formats:\n            - Semantic Scholar ID (e.g., \"649def"
@@ -262,19 +2877,19 @@
   },
   {
    "server": "emblemai/emblem-mcp",
-   "similarity": 0.949,
+   "similarity": 1.0,
    "a": {
-    "name": "baseSwapQuote",
-    "description": "Get current USD price and swap quote for Base tokens. ALWAYS fetch fresh prices - crypto is volatile. Use 0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE for native ETH."
+    "name": "getPolyMarketEventsByTag",
+    "description": "Get Polymarket events filtered by tag/category"
    },
    "b": {
-    "name": "ethSwapQuote",
-    "description": "Get current USD price and swap quote for Ethereum tokens. ALWAYS fetch fresh prices - crypto is volatile. Use 0xEeeeeEeeeEeEeeEeEeEeeEEEeeeeEeeeeeeeEEeE for native ETH."
+    "name": "getPolyMarketTags",
+    "description": "Get Polymarket categories/tags for filtering events"
    }
   },
   {
    "server": "segellfosc-dev-ayfx/menjometre",
-   "similarity": 0.891,
+   "similarity": 0.903,
    "a": {
     "name": "get_person_network",
     "description": "BFS from a single person up to a max depth (hard-capped at 3)."
@@ -286,7 +2901,7 @@
   },
   {
    "server": "TitanSneaker/paper-search-mcp-openai-v2",
-   "similarity": 0.927,
+   "similarity": 0.945,
    "a": {
     "name": "download_semantic",
     "description": "Download PDF of a Semantic Scholar paper.    \n\n    Args:\n        paper_id: Semantic Scholar paper ID, Paper identifier in one of the following formats:\n            - Semantic Scholar ID (e.g., \"649def"
@@ -297,8 +2912,32 @@
    }
   },
   {
+   "server": "hamid-vakilzadeh/mcpsemanticscholar",
+   "similarity": 1.0,
+   "a": {
+    "name": "papers-citations",
+    "description": "Get papers that cite a specific paper"
+   },
+   "b": {
+    "name": "papers-references",
+    "description": "Get papers cited by a specific paper"
+   }
+  },
+  {
+   "server": "pkobielak/social-superpowers",
+   "similarity": 0.805,
+   "a": {
+    "name": "reddit-get-user-comments",
+    "description": "Get comments submitted by a specific Reddit user."
+   },
+   "b": {
+    "name": "reddit-get-user-posts",
+    "description": "Get posts submitted by a specific Reddit user."
+   }
+  },
+  {
    "server": "boar-network/blockchain-basic",
-   "similarity": 0.925,
+   "similarity": 0.92,
    "a": {
     "name": "btc_get_mempool_info",
     "description": "Get mempool fee histogram on Bitcoin mainnet. Returns array of [fee_rate, cumulative_vsize] pairs showing the distribution of transactions in the mempool by fee rate (sat/vB)."
@@ -309,39 +2948,99 @@
    }
   },
   {
+   "server": "vivaldoeuropes/vivaldo-product-discovery",
+   "similarity": 0.82,
+   "a": {
+    "name": "get_product_by_handle",
+    "description": "Get public product details from Vivaldo by Shopify product handle."
+   },
+   "b": {
+    "name": "get_collection_products",
+    "description": "Get public products from a Vivaldo Shopify collection by collection handle."
+   }
+  },
+  {
+   "server": "moodtrip/moodtrip-hotel-search",
+   "similarity": 0.821,
+   "a": {
+    "name": "getHotelPriceIndex",
+    "description": "Get historical price index data for one or more hotels. Returns average per-night prices aggregated by calendar day in USD. Useful for price trend analysis and comparison."
+   },
+   "b": {
+    "name": "getCityPriceIndex",
+    "description": "Get historical price index data for a city. Returns average per-night prices aggregated by calendar day in USD. Useful for destination comparison and pricing analysis."
+   }
+  },
+  {
    "server": "pipeworx/gateway",
    "similarity": 1.0,
    "a": {
-    "name": "wiktionary_summary",
-    "description": "Page summary."
+    "name": "data_ny_datasets",
+    "description": "Search dataset catalogue."
    },
    "b": {
-    "name": "wikiquote_summary",
-    "description": "Page summary."
+    "name": "data_cityofchicago_datasets",
+    "description": "Search dataset catalogue."
    }
   },
   {
    "server": "hithereiamaliff/mcp-malaysiatransit",
-   "similarity": 0.887,
+   "similarity": 0.914,
    "a": {
-    "name": "get_next_departure",
-    "description": "Get the single next departure for a route in a specific direction. Quick way to find when the next bus/train leaves. IMPORTANT: Use route_short_name (e.g., \"101\", \"K10\", \"A32\") NOT numeric route_id. W"
+    "name": "get_route_departures",
+    "description": "Get the next N departures for a specific route (both directions). Useful for showing upcoming bus/train times. IMPORTANT: Use route_short_name (e.g., \"K10\", \"A32\", \"R10\", \"101\") NOT the numeric route_"
    },
    "b": {
-    "name": "get_route_origin",
-    "description": "Get the origin stop name for a route in a specific direction. Useful for showing where the bus/train starts. IMPORTANT: Use route_short_name (e.g., \"101\", \"K10\", \"A32\") NOT numeric route_id. Works for"
+    "name": "get_next_departure",
+    "description": "Get the single next departure for a route in a specific direction. Quick way to find when the next bus/train leaves. IMPORTANT: Use route_short_name (e.g., \"101\", \"K10\", \"A32\") NOT numeric route_id. W"
+   }
+  },
+  {
+   "server": "fenglucc/ko-financial-data",
+   "similarity": 0.81,
+   "a": {
+    "name": "get_institution_holdings",
+    "description": "Get current stock holdings of an institutional investor (hedge fund, mutual fund, pension fund) from their latest SEC 13F filing. Returns top positions with share counts, values, and quarter-over-quar"
+   },
+   "b": {
+    "name": "get_stock_holders",
+    "description": "Get top institutional holders of a stock from SEC 13F filings. Shows which hedge funds, mutual funds, and pension funds own the most shares, with quarter-over-quarter changes."
    }
   },
   {
    "server": "creativelead/unclick",
-   "similarity": 0.976,
+   "similarity": 1.0,
    "a": {
-    "name": "podcast_get_episodes",
-    "description": "Get episodes for a podcast from Podcast Index."
+    "name": "radio_by_country",
+    "description": "Get radio stations by country."
    },
    "b": {
-    "name": "podcast_search_episodes",
-    "description": "Search podcast episodes on Podcast Index."
+    "name": "radio_countries",
+    "description": "List all countries with radio stations."
+   }
+  },
+  {
+   "server": "ramboweb3/hivecast-x711",
+   "similarity": 0.827,
+   "a": {
+    "name": "x711_strategy_publish",
+    "description": "Publish a proven execution strategy to the x711 Strategy Commons. Costs $0.05 USDC. Once published, any agent can fork it for $0.03 \u2014 you earn $0.02 USDC royalty per fork automatically. Browse the com"
+   },
+   "b": {
+    "name": "x711_strategy_fork",
+    "description": "Fork a published strategy from the x711 Strategy Commons. Costs $0.03 USDC. The original publisher earns $0.02 royalty. Returns a copy of the strategy with your agent_id attached. Browse strategies fi"
+   }
+  },
+  {
+   "server": "delx/delx-mcp",
+   "similarity": 0.811,
+   "a": {
+    "name": "util_url_health",
+    "description": "Check if a URL is reachable. Returns HTTP status, latency, and key headers. Delx Agent Utilities are separate from the free witness protocol and may expose x402 utility pricing."
+   },
+   "b": {
+    "name": "util_api_health_report",
+    "description": "Measure endpoint status, latency, redirects, content type, and reachability in one call. Delx Agent Utilities are separate from the free witness protocol and may expose x402 utility pricing."
    }
   },
   {
@@ -354,102 +3053,6 @@
    "b": {
     "name": "round",
     "description": "Rounds a number to the nearest integer"
-   }
-  },
-  {
-   "server": "aparajithn/agent-utils",
-   "similarity": 1.0,
-   "a": {
-    "name": "tool_markdown_to_html",
-    "description": "Convert Markdown to HTML."
-   },
-   "b": {
-    "name": "tool_html_to_markdown",
-    "description": "Convert HTML to Markdown."
-   }
-  },
-  {
-   "server": "dev-7bd0/mcp-server",
-   "similarity": 0.821,
-   "a": {
-    "name": "legal_fetch_patent_by_number",
-    "description": "Fetch full patent details by patent number and jurisdiction. Read-only. No side effects. Idempotent. patent_number: Patent number in EPODOC format e.g. EP1000000 for European, CN120586032 for Chinese,"
-   },
-   "b": {
-    "name": "legal_fetch_patent_citations",
-    "description": "Fetch forward and backward citation chains for a specific patent. Read-only. No side effects. Idempotent. patent_number: Patent number in EPODOC format e.g. EP1000000 for European, CN120586032 for Chi"
-   }
-  },
-  {
-   "server": "Himalayas/himalayas-mcp",
-   "similarity": 0.963,
-   "a": {
-    "name": "get_company_profile",
-    "description": "Get your company's profile on Himalayas. Requires employer authentication."
-   },
-   "b": {
-    "name": "update_company_profile",
-    "description": "Update your company's profile on Himalayas. Requires employer authentication."
-   }
-  },
-  {
-   "server": "cturkieh/france-data",
-   "similarity": 0.807,
-   "a": {
-    "name": "etablissements_finess_in_radius",
-    "description": "Recherche d'\u00e9tablissements de sant\u00e9 FINESS dans un rayon g\u00e9ographique (PostGIS ST_DWithin). Filtrable par familles. 24 valeurs disponibles : mco, ssr, sld, had, psychiatrie, dialyse, ambulatoire, labo"
-   },
-   "b": {
-    "name": "etablissements_finess_by_categorie",
-    "description": "Liste des \u00e9tablissements FINESS par famille, avec filtre d\u00e9partement ou commune optionnel. Pas de rayon \u2014 pour \u00e9num\u00e9ration exhaustive d'une zone administrative. 24 familles disponibles : mco, ssr, sld"
-   }
-  },
-  {
-   "server": "hithereiamaliff/mcp-datagovmy",
-   "similarity": 0.965,
-   "a": {
-    "name": "datagovmy_search_datasets_catalogue",
-    "description": "\u26a0\ufe0f CONSIDER USING search_all INSTEAD: This only searches datasets. For comprehensive results across datasets and dashboards, use search_all tool. \u26a0\ufe0f"
-   },
-   "b": {
-    "name": "datagovmy_search_dashboards",
-    "description": "\u26a0\ufe0f CONSIDER USING search_all INSTEAD: This only searches dashboards. For comprehensive results across datasets and dashboards, use search_all tool. \u26a0\ufe0f"
-   }
-  },
-  {
-   "server": "CaullenOmdahl/nextjs-react-tailwind-assistant",
-   "similarity": 0.9,
-   "a": {
-    "name": "get_library_docs",
-    "description": "Get comprehensive documentation for commonly used libraries in Next.js projects. Available: framer-motion, mdx, headless-ui, next-themes, clsx, tailwind-plugins. Includes installation, usage examples,"
-   },
-   "b": {
-    "name": "list_library_docs",
-    "description": "List all available library documentation files. Includes commonly used libraries like Framer Motion, MDX, Headless UI, next-themes, clsx, and Tailwind plugins. Each provides installation, usage exampl"
-   }
-  },
-  {
-   "server": "satoshidata/wallet-intelligence",
-   "similarity": 0.837,
-   "a": {
-    "name": "entity_list",
-    "description": "Return named Bitcoin entity rollups, optionally filtered by category. coverage_status indicates whether each rollup is full, substantial, partial, or seed-only coverage; last_activity_at is label-DB a"
-   },
-   "b": {
-    "name": "entity_lookup",
-    "description": "Return one named Bitcoin entity rollup and a bounded member-address sample. coverage_status indicates whether the rollup is full, substantial, partial, or seed-only coverage; last_activity_at is label"
-   }
-  },
-  {
-   "server": "rabqatab/lexlink-ko-mcp",
-   "similarity": 0.938,
-   "a": {
-    "name": "lstrm_rlt_jo_search",
-    "description": "\n        Legal term to article linkage (\ubc95\ub839\uc6a9\uc5b4\u2192\uc870\ubb38 \uc5f0\uacc4 \uc870\ud68c).\n\n        This tool searches the linkage between legal terms and the specific\n        law articles where those terms are used or defined.\n\n      "
-   },
-   "b": {
-    "name": "jo_rlt_lstrm_search",
-    "description": "\n        Article to legal term linkage (\uc870\ubb38\u2192\ubc95\ub839\uc6a9\uc5b4 \uc5f0\uacc4 \uc870\ud68c).\n\n        This tool searches the linkage from specific law articles to the\n        legal terms defined or used within those articles. Useful for "
    }
   }
  ],
@@ -603,6 +3206,741 @@
    "tool": "get_odds",
    "param": "markets",
    "description": "h2h | spreads | totals | outrights \u2014 comma-sep (default h2h)"
+  }
+ ],
+ "input_overlap": [
+  {
+   "server": "onesignal/onesignal",
+   "a": "update_subscription",
+   "b": "update_subscription_by_token",
+   "overlap": 0.5,
+   "shared": [
+    "app",
+    "identifi",
+    "subscript",
+    "token",
+    "type"
+   ],
+   "a_distinctive": 0.25,
+   "b_distinctive": 0.273,
+   "a_output": [],
+   "b_output": [
+    "field",
+    "identifi",
+    "pass",
+    "subscript",
+    "subscription_type",
+    "then",
+    "token",
+    "update"
+   ]
+  },
+  {
+   "server": "googlecalendar",
+   "a": "GoogleCalendar_CreateEvent",
+   "b": "GoogleCalendar_UpdateEvent",
+   "overlap": 0.526,
+   "shared": [
+    "add",
+    "attendee",
+    "calendar",
+    "datetime",
+    "description",
+    "email",
+    "end",
+    "event",
+    "googl",
+    "identifi"
+   ],
+   "a_distinctive": 0.636,
+   "b_distinctive": 0.6,
+   "a_output": [],
+   "b_output": [
+    "result"
+   ]
+  },
+  {
+   "server": "naver/search",
+   "a": "search_news",
+   "b": "search_knowledge_in",
+   "overlap": 0.5,
+   "shared": [
+    "display",
+    "naver",
+    "query",
+    "sort",
+    "start"
+   ],
+   "a_distinctive": 0.364,
+   "b_distinctive": 0.4,
+   "a_output": [
+    "article",
+    "date",
+    "link",
+    "origin",
+    "public",
+    "publish",
+    "title"
+   ],
+   "b_output": []
+  },
+  {
+   "server": "naver/search",
+   "a": "search_blogs",
+   "b": "search_knowledge_in",
+   "overlap": 0.5,
+   "shared": [
+    "display",
+    "naver",
+    "query",
+    "sort",
+    "start"
+   ],
+   "a_distinctive": 0.2,
+   "b_distinctive": 0.4,
+   "a_output": [
+    "blogger",
+    "date",
+    "link",
+    "name",
+    "post",
+    "title"
+   ],
+   "b_output": []
+  },
+  {
+   "server": "naver/search",
+   "a": "search_cafe_articles",
+   "b": "search_knowledge_in",
+   "overlap": 0.5,
+   "shared": [
+    "commun",
+    "display",
+    "naver",
+    "query",
+    "sort",
+    "start"
+   ],
+   "a_distinctive": 0.286,
+   "b_distinctive": 0.4,
+   "a_output": [],
+   "b_output": []
+  },
+  {
+   "server": "pkobielak/social-superpowers",
+   "a": "twitter-search",
+   "b": "twitter-user-tweets",
+   "overlap": 0.545,
+   "shared": [
+    "count",
+    "cursor",
+    "onli",
+    "text",
+    "tweet",
+    "twitter"
+   ],
+   "a_distinctive": 0.5,
+   "b_distinctive": 0.2,
+   "a_output": [
+    "engage",
+    "metric",
+    "optimal",
+    "result",
+    "token"
+   ],
+   "b_output": []
+  },
+  {
+   "server": "Nekzus/npm-sentinel-mcp",
+   "a": "npmLatest",
+   "b": "npmVulnerabilities",
+   "overlap": 0.5,
+   "shared": [
+    "cach",
+    "ignor",
+    "package"
+   ],
+   "a_distinctive": 0.333,
+   "b_distinctive": 0.5,
+   "a_output": [
+    "message",
+    "result",
+    "summary"
+   ],
+   "b_output": [
+    "message",
+    "result",
+    "summary"
+   ]
+  },
+  {
+   "server": "Nekzus/npm-sentinel-mcp",
+   "a": "npmLatest",
+   "b": "npmTypes",
+   "overlap": 0.5,
+   "shared": [
+    "cach",
+    "ignor",
+    "package"
+   ],
+   "a_distinctive": 0.333,
+   "b_distinctive": 0.5,
+   "a_output": [
+    "message",
+    "result",
+    "summary"
+   ],
+   "b_output": [
+    "message",
+    "result",
+    "summary"
+   ]
+  },
+  {
+   "server": "Nekzus/npm-sentinel-mcp",
+   "a": "npmLatest",
+   "b": "npmCompare",
+   "overlap": 0.5,
+   "shared": [
+    "cach",
+    "ignor",
+    "package"
+   ],
+   "a_distinctive": 0.333,
+   "b_distinctive": 0.667,
+   "a_output": [
+    "message",
+    "result",
+    "summary"
+   ],
+   "b_output": [
+    "message",
+    "result",
+    "summary"
+   ]
+  },
+  {
+   "server": "Nekzus/npm-sentinel-mcp",
+   "a": "npmLatest",
+   "b": "npmScore",
+   "overlap": 0.5,
+   "shared": [
+    "cach",
+    "ignor",
+    "package"
+   ],
+   "a_distinctive": 0.333,
+   "b_distinctive": 0.667,
+   "a_output": [
+    "message",
+    "result",
+    "summary"
+   ],
+   "b_output": [
+    "message",
+    "result",
+    "summary"
+   ]
+  },
+  {
+   "server": "Nekzus/npm-sentinel-mcp",
+   "a": "npmLatest",
+   "b": "npmMaintainers",
+   "overlap": 0.5,
+   "shared": [
+    "cach",
+    "ignor",
+    "package"
+   ],
+   "a_distinctive": 0.333,
+   "b_distinctive": 1.0,
+   "a_output": [
+    "message",
+    "result",
+    "summary"
+   ],
+   "b_output": [
+    "message",
+    "result",
+    "summary"
+   ]
+  },
+  {
+   "server": "Nekzus/npm-sentinel-mcp",
+   "a": "npmLatest",
+   "b": "npmRepoStats",
+   "overlap": 0.5,
+   "shared": [
+    "cach",
+    "ignor",
+    "package"
+   ],
+   "a_distinctive": 0.333,
+   "b_distinctive": 1.0,
+   "a_output": [
+    "message",
+    "result",
+    "summary"
+   ],
+   "b_output": [
+    "message",
+    "result",
+    "summary"
+   ]
+  },
+  {
+   "server": "Nekzus/npm-sentinel-mcp",
+   "a": "npmVulnerabilities",
+   "b": "npmDeps",
+   "overlap": 0.8,
+   "shared": [
+    "analysis",
+    "cach",
+    "ignor",
+    "package"
+   ],
+   "a_distinctive": 0.5,
+   "b_distinctive": 0.667,
+   "a_output": [
+    "message",
+    "result",
+    "summary"
+   ],
+   "b_output": [
+    "message",
+    "result",
+    "summary"
+   ]
+  },
+  {
+   "server": "Nekzus/npm-sentinel-mcp",
+   "a": "npmVulnerabilities",
+   "b": "npmTypes",
+   "overlap": 0.6,
+   "shared": [
+    "cach",
+    "ignor",
+    "package"
+   ],
+   "a_distinctive": 0.5,
+   "b_distinctive": 0.5,
+   "a_output": [
+    "message",
+    "result",
+    "summary"
+   ],
+   "b_output": [
+    "message",
+    "result",
+    "summary"
+   ]
+  },
+  {
+   "server": "Nekzus/npm-sentinel-mcp",
+   "a": "npmVulnerabilities",
+   "b": "npmSize",
+   "overlap": 0.5,
+   "shared": [
+    "cach",
+    "ignor",
+    "package"
+   ],
+   "a_distinctive": 0.5,
+   "b_distinctive": 0.667,
+   "a_output": [
+    "message",
+    "result",
+    "summary"
+   ],
+   "b_output": [
+    "message",
+    "result",
+    "summary"
+   ]
+  },
+  {
+   "server": "Nekzus/npm-sentinel-mcp",
+   "a": "npmVulnerabilities",
+   "b": "npmCompare",
+   "overlap": 0.6,
+   "shared": [
+    "cach",
+    "ignor",
+    "package"
+   ],
+   "a_distinctive": 0.5,
+   "b_distinctive": 0.667,
+   "a_output": [
+    "message",
+    "result",
+    "summary"
+   ],
+   "b_output": [
+    "message",
+    "result",
+    "summary"
+   ]
+  },
+  {
+   "server": "Nekzus/npm-sentinel-mcp",
+   "a": "npmVulnerabilities",
+   "b": "npmQuality",
+   "overlap": 0.8,
+   "shared": [
+    "analysis",
+    "cach",
+    "ignor",
+    "package"
+   ],
+   "a_distinctive": 0.5,
+   "b_distinctive": 0.333,
+   "a_output": [
+    "message",
+    "result",
+    "summary"
+   ],
+   "b_output": [
+    "message",
+    "result",
+    "summary"
+   ]
+  },
+  {
+   "server": "Nekzus/npm-sentinel-mcp",
+   "a": "npmVulnerabilities",
+   "b": "npmMaintenance",
+   "overlap": 0.8,
+   "shared": [
+    "analysis",
+    "cach",
+    "ignor",
+    "package"
+   ],
+   "a_distinctive": 0.5,
+   "b_distinctive": 0.333,
+   "a_output": [
+    "message",
+    "result",
+    "summary"
+   ],
+   "b_output": [
+    "message",
+    "result",
+    "summary"
+   ]
+  },
+  {
+   "server": "Nekzus/npm-sentinel-mcp",
+   "a": "npmVulnerabilities",
+   "b": "npmScore",
+   "overlap": 0.6,
+   "shared": [
+    "cach",
+    "ignor",
+    "package"
+   ],
+   "a_distinctive": 0.5,
+   "b_distinctive": 0.667,
+   "a_output": [
+    "message",
+    "result",
+    "summary"
+   ],
+   "b_output": [
+    "message",
+    "result",
+    "summary"
+   ]
+  },
+  {
+   "server": "Nekzus/npm-sentinel-mcp",
+   "a": "npmVulnerabilities",
+   "b": "npmMaintainers",
+   "overlap": 0.6,
+   "shared": [
+    "cach",
+    "ignor",
+    "package"
+   ],
+   "a_distinctive": 0.5,
+   "b_distinctive": 1.0,
+   "a_output": [
+    "message",
+    "result",
+    "summary"
+   ],
+   "b_output": [
+    "message",
+    "result",
+    "summary"
+   ]
+  },
+  {
+   "server": "Nekzus/npm-sentinel-mcp",
+   "a": "npmVulnerabilities",
+   "b": "npmPackageReadme",
+   "overlap": 0.5,
+   "shared": [
+    "cach",
+    "ignor",
+    "package"
+   ],
+   "a_distinctive": 0.5,
+   "b_distinctive": 1.0,
+   "a_output": [
+    "message",
+    "result",
+    "summary"
+   ],
+   "b_output": [
+    "message",
+    "result",
+    "summary"
+   ]
+  },
+  {
+   "server": "Nekzus/npm-sentinel-mcp",
+   "a": "npmVulnerabilities",
+   "b": "npmRepoStats",
+   "overlap": 0.6,
+   "shared": [
+    "cach",
+    "ignor",
+    "package"
+   ],
+   "a_distinctive": 0.5,
+   "b_distinctive": 1.0,
+   "a_output": [
+    "message",
+    "result",
+    "summary"
+   ],
+   "b_output": [
+    "message",
+    "result",
+    "summary"
+   ]
+  },
+  {
+   "server": "Nekzus/npm-sentinel-mcp",
+   "a": "npmVulnerabilities",
+   "b": "npmDeprecated",
+   "overlap": 0.5,
+   "shared": [
+    "cach",
+    "ignor",
+    "package"
+   ],
+   "a_distinctive": 0.5,
+   "b_distinctive": 0.667,
+   "a_output": [
+    "message",
+    "result",
+    "summary"
+   ],
+   "b_output": [
+    "message",
+    "result",
+    "summary"
+   ]
+  },
+  {
+   "server": "Nekzus/npm-sentinel-mcp",
+   "a": "npmVulnerabilities",
+   "b": "npmChangelogAnalysis",
+   "overlap": 0.5,
+   "shared": [
+    "cach",
+    "ignor",
+    "package"
+   ],
+   "a_distinctive": 0.5,
+   "b_distinctive": 0.667,
+   "a_output": [
+    "message",
+    "result",
+    "summary"
+   ],
+   "b_output": [
+    "message",
+    "result",
+    "summary"
+   ]
+  },
+  {
+   "server": "Nekzus/npm-sentinel-mcp",
+   "a": "npmVulnerabilities",
+   "b": "npmAlternatives",
+   "overlap": 0.5,
+   "shared": [
+    "cach",
+    "ignor",
+    "package"
+   ],
+   "a_distinctive": 0.5,
+   "b_distinctive": 1.0,
+   "a_output": [
+    "message",
+    "result",
+    "summary"
+   ],
+   "b_output": [
+    "message",
+    "result",
+    "summary"
+   ]
+  }
+ ],
+ "reading_gap": [
+  {
+   "server": "onesignal/onesignal",
+   "tools": 34,
+   "domain_stripped_median": 0.3,
+   "shares_an_object": true
+  },
+  {
+   "server": "pubmed",
+   "tools": 7,
+   "domain_stripped_median": 0.667,
+   "shares_an_object": true
+  },
+  {
+   "server": "googlecalendar",
+   "tools": 9,
+   "domain_stripped_median": 0.583,
+   "shares_an_object": true
+  },
+  {
+   "server": "googledrive",
+   "tools": 18,
+   "domain_stripped_median": 0.385,
+   "shares_an_object": true
+  },
+  {
+   "server": "aiwyn",
+   "tools": 10,
+   "domain_stripped_median": 0.319,
+   "shares_an_object": true
+  },
+  {
+   "server": "isdaniel/mcp_weather_server",
+   "tools": 8,
+   "domain_stripped_median": 0.5,
+   "shares_an_object": true
+  },
+  {
+   "server": "naver/search",
+   "tools": 12,
+   "domain_stripped_median": 0.625,
+   "shares_an_object": true
+  },
+  {
+   "server": "segellfosc-dev-ayfx/menjometre",
+   "tools": 48,
+   "domain_stripped_median": 0.273,
+   "shares_an_object": true
+  },
+  {
+   "server": "hamid-vakilzadeh/mcpsemanticscholar",
+   "tools": 12,
+   "domain_stripped_median": 0.5,
+   "shares_an_object": true
+  },
+  {
+   "server": "pkobielak/social-superpowers",
+   "tools": 12,
+   "domain_stripped_median": 0.2,
+   "shares_an_object": true
+  },
+  {
+   "server": "Nekzus/npm-sentinel-mcp",
+   "tools": 19,
+   "domain_stripped_median": 0.667,
+   "shares_an_object": true
+  },
+  {
+   "server": "aryankeluskar/polymarket-mcp",
+   "tools": 7,
+   "domain_stripped_median": 0.385,
+   "shares_an_object": true
+  },
+  {
+   "server": "listentosadhu/corpus",
+   "tools": 18,
+   "domain_stripped_median": 0.444,
+   "shares_an_object": true
+  },
+  {
+   "server": "virtualsms/virtualsms-mcp",
+   "tools": 18,
+   "domain_stripped_median": 0.471,
+   "shares_an_object": true
+  },
+  {
+   "server": "hjsh200219/fortuneteller",
+   "tools": 7,
+   "domain_stripped_median": 0.438,
+   "shares_an_object": true
+  },
+  {
+   "server": "henry-ships/sparkforge",
+   "tools": 33,
+   "domain_stripped_median": 0.455,
+   "shares_an_object": true
+  },
+  {
+   "server": "EthanHenrickson/math-mcp",
+   "tools": 22,
+   "domain_stripped_median": 0.25,
+   "shares_an_object": true
+  },
+  {
+   "server": "delx/witness-protocol",
+   "tools": 54,
+   "domain_stripped_median": 0.429,
+   "shares_an_object": true
+  },
+  {
+   "server": "aparajithn/agent-utils",
+   "tools": 18,
+   "domain_stripped_median": 0.5,
+   "shares_an_object": true
+  },
+  {
+   "server": "Himalayas/himalayas-mcp",
+   "tools": 34,
+   "domain_stripped_median": 0.2,
+   "shares_an_object": true
+  },
+  {
+   "server": "hithereiamaliff/mcp-datagovmy",
+   "tools": 31,
+   "domain_stripped_median": 0.25,
+   "shares_an_object": true
+  },
+  {
+   "server": "CaullenOmdahl/nextjs-react-tailwind-assistant",
+   "tools": 16,
+   "domain_stripped_median": 0.226,
+   "shares_an_object": true
+  },
+  {
+   "server": "satoshidata/wallet-intelligence",
+   "tools": 44,
+   "domain_stripped_median": 0.25,
+   "shares_an_object": true
+  },
+  {
+   "server": "icons8community/icons8mpc",
+   "tools": 4,
+   "domain_stripped_median": 0.879,
+   "shares_an_object": true
+  },
+  {
+   "server": "alperenkocyigit/authorprofilemcp",
+   "tools": 2,
+   "domain_stripped_median": 1.0,
+   "shares_an_object": true
   }
  ],
  "undescribed_param": [
@@ -832,6 +4170,208 @@
   {
    "server": "shadow/shadow",
    "tool": "list_workspace_models"
+  }
+ ],
+ "branch_ambiguity": [
+  {
+   "server": "brian-ifpw/youdotcom",
+   "tool": "you-research",
+   "path": "source_control",
+   "keyword": "anyOf",
+   "branches": 2,
+   "ambiguity": 1.0
+  },
+  {
+   "server": "youcam/Beauty",
+   "tool": "AI-Body-Reshape",
+   "path": "request",
+   "keyword": "anyOf",
+   "branches": 2,
+   "ambiguity": 0.6
+  },
+  {
+   "server": "youcam/Beauty",
+   "tool": "AI-Face-Lift",
+   "path": "request",
+   "keyword": "anyOf",
+   "branches": 4,
+   "ambiguity": 0.81
+  },
+  {
+   "server": "youcam/Beauty",
+   "tool": "AI-Face-Reshape",
+   "path": "request",
+   "keyword": "anyOf",
+   "branches": 2,
+   "ambiguity": 0.667
+  },
+  {
+   "server": "youcam/Beauty",
+   "tool": "AI-Hair-Color-Virtual-Try-On",
+   "path": "request",
+   "keyword": "anyOf",
+   "branches": 2,
+   "ambiguity": 0.6
+  },
+  {
+   "server": "youcam/Beauty",
+   "tool": "AI-Nail-Virtual-Try-On",
+   "path": "request",
+   "keyword": "anyOf",
+   "branches": 4,
+   "ambiguity": 0.587
+  },
+  {
+   "server": "youcam/Beauty",
+   "tool": "AI-Skin-Analysis",
+   "path": "request",
+   "keyword": "anyOf",
+   "branches": 2,
+   "ambiguity": 0.667
+  },
+  {
+   "server": "youcam/Beauty",
+   "tool": "AI-Skin-simulation",
+   "path": "request",
+   "keyword": "anyOf",
+   "branches": 2,
+   "ambiguity": 0.833
+  },
+  {
+   "server": "klaviyo",
+   "tool": "klaviyo_get_campaigns",
+   "path": "filters[]",
+   "keyword": "anyOf",
+   "branches": 6,
+   "ambiguity": 0.667
+  },
+  {
+   "server": "klaviyo",
+   "tool": "klaviyo_create_campaign",
+   "path": "input.data.attributes.sendOptions",
+   "keyword": "anyOf",
+   "branches": 3,
+   "ambiguity": 1.0
+  },
+  {
+   "server": "klaviyo",
+   "tool": "klaviyo_query_metric_aggregates",
+   "path": "additionalFilter",
+   "keyword": "anyOf",
+   "branches": 3,
+   "ambiguity": 1.0
+  },
+  {
+   "server": "composio",
+   "tool": "connected_accounts.link.create",
+   "path": "connection_data",
+   "keyword": "anyOf",
+   "branches": 75,
+   "ambiguity": 0.854
+  },
+  {
+   "server": "smithery/composio",
+   "tool": "connected_accounts.link.create",
+   "path": "connection_data",
+   "keyword": "anyOf",
+   "branches": 75,
+   "ambiguity": 0.854
+  },
+  {
+   "server": "calendly",
+   "tool": "meetings-create_invitee",
+   "path": "post_invitee_request.location.actual_instance",
+   "keyword": "anyOf",
+   "branches": 11,
+   "ambiguity": 0.6
+  },
+  {
+   "server": "PostHog",
+   "tool": "survey-create",
+   "path": "targeting_flag_filters.groups[].properties[]",
+   "keyword": "anyOf",
+   "branches": 7,
+   "ambiguity": 1.0
+  },
+  {
+   "server": "PostHog",
+   "tool": "survey-update",
+   "path": "targeting_flag_filters.groups[].properties[]",
+   "keyword": "anyOf",
+   "branches": 7,
+   "ambiguity": 1.0
+  },
+  {
+   "server": "PostHog",
+   "tool": "action-create",
+   "path": "steps[].properties[]",
+   "keyword": "anyOf",
+   "branches": 5,
+   "ambiguity": 0.9
+  },
+  {
+   "server": "PostHog",
+   "tool": "action-update",
+   "path": "steps[].properties[]",
+   "keyword": "anyOf",
+   "branches": 5,
+   "ambiguity": 0.9
+  },
+  {
+   "server": "PostHog",
+   "tool": "create-feature-flag",
+   "path": "filters.groups[].properties[]",
+   "keyword": "anyOf",
+   "branches": 7,
+   "ambiguity": 1.0
+  },
+  {
+   "server": "PostHog",
+   "tool": "error-tracking-assignment-rules-create",
+   "path": "filters.values[]",
+   "keyword": "anyOf",
+   "branches": 21,
+   "ambiguity": 0.777
+  },
+  {
+   "server": "PostHog",
+   "tool": "error-tracking-grouping-rules-create",
+   "path": "filters.values[]",
+   "keyword": "anyOf",
+   "branches": 21,
+   "ambiguity": 0.777
+  },
+  {
+   "server": "PostHog",
+   "tool": "error-tracking-suppression-rules-create",
+   "path": "filters.values[]",
+   "keyword": "anyOf",
+   "branches": 21,
+   "ambiguity": 0.777
+  },
+  {
+   "server": "PostHog",
+   "tool": "update-feature-flag",
+   "path": "filters.groups[].properties[]",
+   "keyword": "anyOf",
+   "branches": 7,
+   "ambiguity": 1.0
+  },
+  {
+   "server": "vrsai/capabilities",
+   "tool": "payout_preflight",
+   "path": "trusted_baseline",
+   "keyword": "anyOf",
+   "branches": 2,
+   "ambiguity": 0.667
+  },
+  {
+   "server": "youcam/Fashion",
+   "tool": "AI-Bag-Virtual-Try-On",
+   "path": "request",
+   "keyword": "anyOf",
+   "branches": 4,
+   "ambiguity": 0.511
   }
  ]
 }
